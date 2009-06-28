@@ -1,1 +1,0 @@
-<% response.sendRedirect("/gen/faces/grupoObjetivo/listar.jsp"); %>

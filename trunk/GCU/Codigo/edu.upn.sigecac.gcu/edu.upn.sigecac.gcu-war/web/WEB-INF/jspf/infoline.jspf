@@ -1,6 +1,0 @@
-<%@ page pageEncoding="UTF-8" %>
-			<div id="infoline">
-				<label>Docente:</label> <span>Jorge S&aacute;nchez Castro</span>
-				<label>&Uacute;ltimo Login</label> <span>2009-03-30 @ 16:32:44</span>
-			</div>
-
