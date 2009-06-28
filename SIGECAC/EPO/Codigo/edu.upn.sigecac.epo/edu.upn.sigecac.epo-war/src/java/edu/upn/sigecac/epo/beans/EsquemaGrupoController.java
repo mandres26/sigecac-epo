@@ -24,6 +24,17 @@ public class EsquemaGrupoController {
 
     private EsquemaGrupoLocal local;
     private Clase selClase = null;
+    private List<EsquemaGrupo> lista;
+    private EsquemaGrupo esquemaGrupo;
+
+    public EsquemaGrupo getEsquemaGrupo() {
+        return esquemaGrupo;
+    }
+
+    public void setEsquemaGrupo(EsquemaGrupo esquemaGrupo) {
+        this.esquemaGrupo = esquemaGrupo;
+    }
+
 
     public Clase getSelClase() {
         return selClase;
@@ -36,6 +47,60 @@ public class EsquemaGrupoController {
     public EsquemaGrupoController() {
         local = lookup();
     }
+
+    public String nuevo(){
+        esquemaGrupo = new EsquemaGrupo();
+        return "esquema_nuevo";
+    }
+
+    public String Registrar (){
+        try {
+            esquemaGrupo.setFidGenClase(12);
+            local.registrar(esquemaGrupo);
+
+        } catch (Exception ex) {
+            Logger.getLogger(EsquemaGrupoController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return "ok";
+    }
+
+        public List<EsquemaGrupo> listar() {
+        try {
+            return local.listar();
+        } catch (Exception e) {
+            local = lookup();
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public String editar(){
+        try {
+            local.editar(esquemaGrupo);
+
+        } catch (Exception ex) {
+            Logger.getLogger(EsquemaGrupoController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return "ok";
+    }
+
+
+    public String eliminar(){
+        try {
+            local.eliminar(esquemaGrupo);
+
+        } catch (Exception ex) {
+            Logger.getLogger(EsquemaGrupoController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return "ok";
+    }
+
+
+    public List<EsquemaGrupo> getListaEsquemasGrupos() {
+        lista = listar();
+        return lista;
+    }
+
 
     public List<EsquemaGrupo> listarPorClase(String idClase) {
         try {

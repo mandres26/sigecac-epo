@@ -42,7 +42,7 @@
             <h:outputLabel styleClass="outputLabel" value="Fecha y Hora de Inicio"/>
             <h:panelGroup>
                 <div class="inputCalendar">
-                <t:inputCalendar renderAsPopup="true" id="txtFechaI" required="false" value="#{Peticion.peticion_fechaInicio}" /></div>
+                <t:inputCalendar renderAsPopup="true" id="txtFechaI" required="false" value="#{Peticion.peticion.inicio}" /></div>
                 <h:selectOneMenu value="#{Peticion.peticion_horaInicio}">
                     <f:selectItem itemValue="23:00:00" itemLabel="11:00pm" />
                     <f:selectItem itemValue="22:00:00" itemLabel="10:00pm" />
@@ -74,7 +74,7 @@
 
             <h:outputLabel styleClass="outputLabel" value="Fecha y Hora de Fin"/>
             <h:panelGroup>
-                <div class="inputCalendar"><t:inputCalendar renderAsPopup="true" id="txtFechaF" required="false" value="#{Peticion.peticion_fechaFin}" /></div>
+                <div class="inputCalendar"><t:inputCalendar renderAsPopup="true" id="txtFechaF" required="false" value="#{Peticion.peticion.fin}" /></div>
                 <h:selectOneMenu value="#{Peticion.peticion_horaFin}">
                     <f:selectItem itemValue="23:00:00" itemLabel="11:00pm" />
                     <f:selectItem itemValue="22:00:00" itemLabel="10:00pm" />

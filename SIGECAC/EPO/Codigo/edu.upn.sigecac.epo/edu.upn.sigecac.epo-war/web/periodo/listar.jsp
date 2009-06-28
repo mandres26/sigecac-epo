@@ -22,6 +22,7 @@
     <BR>
     <BR>
     <BR>
+        <h:messages id="messages" showDetail="true" />
 
     <h:form>
         <t:dataTable value="#{PeriodoAcademico.listaPeriodosAcademicos}" var="item" preserveDataModel="true" varDetailToggler="detailToggler" styleClass="formulario">
@@ -37,6 +38,23 @@
                 <f:facet name="header"><h:outputText value="Fin" /></f:facet>
                 <h:outputText id="fin" value="#{item.fin}" />
             </h:column>
+
+
+            <h:column>
+                <f:facet name="header"><h:outputText value="Editar" /></f:facet>
+                <h:commandButton styleClass="commandButton_Main" id="btnEditar" value="Editar" action="periodo_editar">
+                    <f:setPropertyActionListener target="#{PeriodoAcademico.periodoAcademico}" value="#{item}" />
+                </h:commandButton>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header"><h:outputText value="Eliminar" /></f:facet>
+                <h:commandButton styleClass="commandButton_Main" id="btnEliminar" value="Eliminar" action="#{PeriodoAcademico.eliminar}">
+                    <f:setPropertyActionListener target="#{PeriodoAcademico.periodoAcademico}" value="#{item}" />
+                </h:commandButton>
+            </h:column>
+
+
             <f:facet name="footer">
                 <h:panelGrid columns="2">
                     <h:commandButton styleClass="commandButton_Main" id="btnVolver" value="Volver" action="volver"/>

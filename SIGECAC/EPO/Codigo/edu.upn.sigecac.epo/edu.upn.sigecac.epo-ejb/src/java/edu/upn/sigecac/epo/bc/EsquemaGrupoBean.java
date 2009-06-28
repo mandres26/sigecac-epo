@@ -27,6 +27,45 @@ public class EsquemaGrupoBean implements EsquemaGrupoLocal {
 
 
     @Override
+    public void registrar(EsquemaGrupo eg) throws Exception {
+        try {
+            em.persist(eg);
+        } catch (Exception e) {
+            throw new Exception("Error: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public void editar(EsquemaGrupo eg) throws Exception {
+        try {
+            em.merge(eg);
+        } catch (Exception e) {
+            throw new Exception("Error: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public void eliminar(EsquemaGrupo eg) throws Exception {
+        try {
+            em.remove(em.merge(eg));
+        } catch (Exception e) {
+            throw new Exception("Error: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public List<EsquemaGrupo> listar() throws Exception {
+        try {
+            return (List<EsquemaGrupo>) em.createNamedQuery("EsquemaGrupo.findAll").getResultList();
+        } catch (Exception e) {
+            throw new Exception("Error: " + e.getMessage());
+        }
+    }
+
+
+
+
+    @Override
     public List<EsquemaGrupo> listarPorClase(String idClase) throws Exception {
         List<EsquemaGrupo> lista = null;
         try {

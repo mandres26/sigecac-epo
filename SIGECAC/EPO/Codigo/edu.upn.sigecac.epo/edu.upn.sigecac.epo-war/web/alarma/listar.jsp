@@ -1,7 +1,7 @@
 <%--
     Document   : seleccionarPublicar
     Created on : 13/04/2009, 02:49:44 AM
-    Author     : texai
+    Author     : Nancy Espinola
 --%>
 
 <%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
@@ -29,6 +29,21 @@
                 <f:facet name="header"><h:outputText value="Alarmas" /></f:facet>
                 <h:outputText id="palabra" value="#{item.palabra}" />
             </h:column>
+
+            <h:column>
+                <f:facet name="header"><h:outputText value="Editar" /></f:facet>
+                <h:commandButton styleClass="commandButton_Main" id="btnEditar" value="Editar" action="alarma_editar">
+                    <f:setPropertyActionListener target="#{Alarma.alarma}" value="#{item}" />
+                </h:commandButton>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header"><h:outputText value="Eliminar" /></f:facet>
+                <h:commandButton styleClass="commandButton_Main" id="btnEliminar" value="Eliminar" action="#{Alarma.eliminar}">
+                    <f:setPropertyActionListener target="#{Alarma.alarma}" value="#{item}" />
+                </h:commandButton>
+            </h:column>
+            
             <f:facet name="footer">
                 <h:panelGrid columns="2">
                     <h:commandButton styleClass="commandButton_Main" id="btnVolver" value="Volver" action="volver"/>

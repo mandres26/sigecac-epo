@@ -9,6 +9,8 @@ import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -29,6 +31,7 @@ public class EsquemaGrupo implements Serializable {
     @Id
     @Basic(optional = false)
     @Column(name = "ID_ESQUEMA_GRUPO")
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long idEsquemaGrupo;
     @Basic(optional = false)
     @Column(name = "FID_GEN_CLASE")
@@ -111,8 +114,8 @@ public class EsquemaGrupo implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 59 * hash + (this.idEsquemaGrupo != null ? this.idEsquemaGrupo.hashCode() : 0);
+        int hash = 7;
+        hash = 23 * hash + (this.idEsquemaGrupo != null ? this.idEsquemaGrupo.hashCode() : 0);
         return hash;
     }
 

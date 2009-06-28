@@ -62,6 +62,28 @@ public class AlarmaController {
         return null;
     }
 
+    public String editar(){
+        try {
+            local.editar(alarma);
+
+        } catch (Exception ex) {
+            Logger.getLogger(PeriodoAcademicoController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return "ok";
+    }
+
+
+    public String eliminar(){
+        try {
+            local.eliminar(alarma);
+
+        } catch (Exception ex) {
+            Logger.getLogger(PeriodoAcademicoController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return "ok";
+    }
+
+
     public List<Alarma> getListaAlarmas() {
         lista = listar();
         return lista;
