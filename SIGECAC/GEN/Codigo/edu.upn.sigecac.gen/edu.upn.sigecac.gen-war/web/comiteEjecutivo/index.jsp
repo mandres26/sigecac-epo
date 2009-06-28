@@ -1,0 +1,1 @@
+<% response.sendRedirect("/gen/faces/comiteEjecutivo/listar.jsp"); %>

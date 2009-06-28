@@ -1,0 +1,1 @@
+<% response.sendRedirect("/gen/faces/docente/listar.jsp"); %>

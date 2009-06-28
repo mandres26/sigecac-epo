@@ -1,0 +1,26 @@
+<%@ page pageEncoding="UTF-8" %>
+			<div id="tabs">
+
+                <%@include file="tab_off_inicio.jspf" %>
+                        <a href="#">Buscar</a>
+                <%@include file="tab_off_final.jspf" %>
+
+                <%@include file="tab_on_inicio.jspf" %>
+                        <a href="#">Trabajos</a>
+                <%@include file="tab_on_final.jspf" %>
+
+                <%@include file="tab_off_inicio.jspf" %>
+                        <a href="#">Mi Perfil</a>
+                <%@include file="tab_off_final.jspf" %>
+
+                <%@include file="tab_off_inicio.jspf" %>
+                        <a href="#">Preferencias</a>
+                <%@include file="tab_off_final.jspf" %>
+
+                <%@include file="tab_off_inicio.jspf" %>
+                        <a href="#">Ayuda</a>
+                <%@include file="tab_off_final.jspf" %>
+
+				<div class="divbr"></div>
+			</div>
+

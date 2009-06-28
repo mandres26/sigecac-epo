@@ -1,0 +1,22 @@
+<%@ page pageEncoding="ISO-8859-1" %>
+<%@taglib prefix="f" uri="http://java.sun.com/jsf/core"%>
+<%@taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
+<%@taglib prefix="rich" uri="http://richfaces.org/rich"%>
+<%@taglib prefix="a4j" uri="http://richfaces.org/a4j"%>
+<link type="text/css" rel="stylesheet" href="/gcu/css/gcu.css" />
+<table >
+    <tr>
+        <td>
+           <ul style="list-style-type:none;line-height:20px;" >
+                <li><h:outputLink value="/gcu/faces/nivelprofesional/listarNivelProfesional.jsp" styleClass="lnk m_niveles">Mant. Nivel Profesional</h:outputLink></li>
+                <li><h:outputLink value="/gcu/faces/area/listarArea.jsp" styleClass="lnk m_niveles">Mant. Areas</h:outputLink></li>
+                <li><h:outputLink value="/gcu/faces/subarea/listarSubArea.jsp" styleClass="lnk m_niveles" >Mant. Sub Areas</h:outputLink></li>
+                <!--<li><h:outputLink value="/gcu/faces/niveles/mantNiveles.jsp" styleClass="lnk m_niveles" >Mant. de Niveles</h:outputLink></li>-->
+                <li><h:outputLink value="/gcu/faces/curso/mantCurso.jsp" styleClass="lnk m_curso" >Mant. de Cursos</h:outputLink></li>
+                <li><h:outputLink value="/gcu/faces/mallacurricular/mantMallaCurricular.jsp" styleClass="lnk m_mallacurricular" >Mant. de Curriculas</h:outputLink></li>
+                <li><h:outputLink value="/gcu/faces/estandares/listarEstandaresCuantificadores.jsp" styleClass="lnk m_estandares" >Mant. Estandares y Cuant.</h:outputLink></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+ 

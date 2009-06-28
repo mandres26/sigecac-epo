@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="curso/editarCurso.jsp" x="279" y="339" zoom="true"/>
+        <Node id="equivalencias/listarEquivalencias.jsp" x="1150" y="300" zoom="true"/>
+        <Node id="index.jsp" x="1650" y="150" zoom="true"/>
+        <Node id="edicioncurso/listarEdicionCurso.jsp" x="109" y="570" zoom="true"/>
+        <Node id="edicioncurso/editarEdicionCurso.jsp" x="62" y="702" zoom="true"/>
+        <Node id="login-error.jsp" x="150" y="1200" zoom="true"/>
+        <Node id="subarea/editarSubArea.jsp" x="1287" y="894" zoom="true"/>
+        <Node id="equivalencias/editarEquivalencias.jsp" x="1417" y="728" zoom="true"/>
+        <Node id="subarea/listarSubArea.jsp" x="998" y="772" zoom="true"/>
+        <Node id="mallacurricular/listarMallaCurricular.jsp" x="679" y="833" zoom="true"/>
+        <Node id="mallacurricular/mostrarMallaCurricular.jsp" x="150" y="900" zoom="true"/>
+        <Node id="area/listarArea.jsp" x="500" y="562" zoom="true"/>
+        <Node id="nivelprofesional/nuevoNivelProfesional.jsp" x="1845" y="588" zoom="true"/>
+        <Node id="logout.jsp" x="150" y="1050" zoom="true"/>
+        <Node id="estandares/listarEstandaresCuantificadores.jsp" x="400" y="300" zoom="true"/>
+        <Node id="estandares/nuevoEstandaresCuantificadores.jsp" x="150" y="150" zoom="true"/>
+        <Node id="area/nuevoArea.jsp" x="548" y="622" zoom="true"/>
+        <Node id="area/editarArea.jsp" x="445" y="670" zoom="true"/>
+        <Node id="curso/listarCurso.jsp" x="53" y="221" zoom="true"/>
+        <Node id="curso/nuevoCurso.jsp" x="-25" y="357" zoom="true"/>
+        <Node id="equivalencias/mostrarEquivalencias.jsp" x="400" y="750" zoom="true"/>
+        <Node id="subarea/nuevoSubArea.jsp" x="1003" y="933" zoom="true"/>
+        <Node id="edicioncurso/nuevoEdicionCurso.jsp" x="110" y="444" zoom="true"/>
+        <Node id="objetivocurso/listarObjetivoCurso.jsp" x="650" y="150" zoom="true"/>
+        <Node id="equivalencias/nuevoEquivalencias.jsp" x="900" y="150" zoom="true"/>
+        <Node id="nivelprofesional/editarNivelProfesional.jsp" x="1900" y="150" zoom="true"/>
+        <Node id="nivelprofesional/listarNivelProfesional.jsp" x="1854" y="356" zoom="true"/>
+        <Node id="estandares/editarEstandaresCuantificadores.jsp" x="150" y="300" zoom="true"/>
+        <Node id="mallacurricular/editarMallaCurricular.jsp" x="650" y="900" zoom="true"/>
+        <Node id="objetivocurso/nuevoObjetivoCurso.jsp" x="1562" y="688" zoom="true"/>
+        <Node id="mallacurricular/nuevoMallaCurricular.jsp" x="400" y="900" zoom="true"/>
+        <Node id="login.jsp" x="400" y="1050" zoom="true"/>
+        <Node id="objetivocurso/editarObjetivoCurso.jsp" x="875" y="666" zoom="true"/>
+        <Node id="objetivocurso/mostrarObjetivoCurso.jsp" x="400" y="150" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

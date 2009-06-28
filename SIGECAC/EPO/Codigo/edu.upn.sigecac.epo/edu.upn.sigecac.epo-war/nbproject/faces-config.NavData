@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="grupo/ver.jsp" x="400" y="1050" zoom="true"/>
+        <Node id="publicacion/seleccionarCalificar.jsp" x="1150" y="600" zoom="true"/>
+        <Node id="periodo/seleccionar.jsp" x="900" y="750" zoom="true"/>
+        <Node id="grupo/editar.jsp" x="678" y="721" zoom="true"/>
+        <Node id="index.jsp" x="579" y="106" zoom="true"/>
+        <Node id="publicacion/calificar.jsp" x="1150" y="300" zoom="true"/>
+        <Node id="esquema/ver.jsp" x="1650" y="450" zoom="true"/>
+        <Node id="clase/seleccionar.jsp" x="400" y="450" zoom="true"/>
+        <Node id="login-error.jsp" x="1161" y="512" zoom="true"/>
+        <Node id="publicacion/nuevo.jsp" x="13" y="552" zoom="true"/>
+        <Node id="periodo/nuevo.jsp" x="99" y="706" zoom="true"/>
+        <Node id="criterio/nuevo.jsp" x="1900" y="150" zoom="true"/>
+        <Node id="grupo/nuevo.jsp" x="1691" y="74" zoom="true"/>
+        <Node id="peticion/listar.jsp" x="423" y="205" zoom="true"/>
+        <Node id="esquema/seleccionar.jsp" x="1400" y="600" zoom="true"/>
+        <Node id="logout.jsp" x="415" y="32" zoom="true"/>
+        <Node id="publicacion/resultadosBusqueda.jsp" x="811" y="165" zoom="true"/>
+        <Node id="esquema/nuevo.jsp" x="650" y="600" zoom="true"/>
+        <Node id="rubrica/ver.jsp" x="1400" y="450" zoom="true"/>
+        <Node id="publicacion/ver.jsp" x="848" y="270" zoom="true"/>
+        <Node id="rubrica/nuevo.jsp" x="1390" y="500" zoom="true"/>
+        <Node id="rubrica/ver(hint).jsp" x="150" y="300" zoom="true"/>
+        <Node id="peticion/seleccionarPublicar.jsp" x="-9" y="391" zoom="true"/>
+        <Node id="publicacion/busqueda.jsp" x="732" y="10" zoom="true"/>
+        <Node id="esquema/listar.jsp" x="454" y="517" zoom="true"/>
+        <Node id="periodo/editar.jsp" x="391" y="625" zoom="true"/>
+        <Node id="peticion/seleccionarCalificar.jsp" x="400" y="750" zoom="true"/>
+        <Node id="peticion/nuevo.jsp" x="253" y="344" zoom="true"/>
+        <Node id="grupo/listar.jsp" x="1900" y="300" zoom="true"/>
+        <Node id="publicacion/nuevoPropio.jsp" x="900" y="600" zoom="true"/>
+        <Node id="rubrica/listar.jsp" x="650" y="150" zoom="true"/>
+        <Node id="alarma/nuevo.jsp" x="400" y="900" zoom="true"/>
+        <Node id="peticion/nuevoAsignacion.jsp" x="2" y="128" zoom="true"/>
+        <Node id="alarma/editar.jsp" x="900" y="450" zoom="true"/>
+        <Node id="alarma/ver.jsp" x="139" y="965" zoom="true"/>
+        <Node id="periodo/listar.jsp" x="43" y="611" zoom="true"/>
+        <Node id="comentario/validar.jsp" x="1400" y="300" zoom="true"/>
+        <Node id="alarma/listar.jsp" x="1048" y="356" zoom="true"/>
+        <Node id="esquema/editar.jsp" x="150" y="900" zoom="true"/>
+        <Node id="periodo/ver.jsp" x="426" y="578" zoom="true"/>
+        <Node id="login.jsp" x="938" y="528" zoom="true"/>
+        <Node id="rubrica/nuevoCriterio.jsp" x="150" y="150" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

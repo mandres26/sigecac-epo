@@ -1,0 +1,8 @@
+<%@ page pageEncoding="ISO-8859-1" %>
+								</div>
+
+								<div class="center" id="splitter_central"><br /><br /><a href="#" onclick="esconder_menu();"><img src="/seg/img/splitter.jpg" border="0" alt="<< Esconder el Men&uacute;" /></a></div>
+								<div class="center" id="splitter_menu"><br /><br /><a href="#" onclick="mostrar_menu();"><img src="/seg/img/splitter_menu.jpg" border="0" alt="Mostrar el Men&uacute; >>" /></a></div>
+
+								<div class="right">
+
