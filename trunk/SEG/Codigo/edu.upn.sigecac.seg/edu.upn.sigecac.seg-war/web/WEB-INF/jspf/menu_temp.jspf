@@ -1,0 +1,19 @@
+<%@ page pageEncoding="ISO-8859-1" %>
+<%@taglib prefix="f" uri="http://java.sun.com/jsf/core"%>
+<%@taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
+<style>
+    #menu_temp a{color: navy; font-family: sans-serif; text-decoration: none; font-size: 12px; margin-right: 20px;}
+    #menu_temp a:hover{color: white; background: navy;} #menu_temp td{vertical-align: top;}
+</style>
+<table id="menu_temp">
+    <tr>
+        <td style="color:#333;font-weight:bold;">
+            <ul>
+                <li><h:outputLink value="/seg/faces/usuario/listar.jsp">Mantenimiento de Usuarios</h:outputLink></li>
+                <li><h:outputLink value="/seg/faces/grupo/listar.jsp">Mantenimiento de Grupos</h:outputLink></li>
+                <li><h:outputLink value="/seg/faces/rol/listar.jsp">Mantenimiento de Roles</h:outputLink></li>
+            </ul>
+        </td>
+    </tr>
+
+</table>

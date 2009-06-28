@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="rol/editar.jsp" x="-59" y="161" zoom="true"/>
+        <Node id="usuario/listar.jsp" x="229" y="495" zoom="false"/>
+        <Node id="grupo/editar.jsp" x="1415" y="661" zoom="true"/>
+        <Node id="usuario/addgrupo.jsp" x="-12" y="1042" zoom="true"/>
+        <Node id="index.jsp" x="737" y="22" zoom="true"/>
+        <Node id="login-error.jsp" x="910" y="23" zoom="true"/>
+        <Node id="grupo/listar.jsp" x="1114" y="505" zoom="true"/>
+        <Node id="rol/listar.jsp" x="203" y="7" zoom="true"/>
+        <Node id="usuario/mostrar.jsp" x="225" y="349" zoom="true"/>
+        <Node id="subsistemas.jsp" x="650" y="150" zoom="true"/>
+        <Node id="usuario/listarpersona.jsp" x="-47" y="386" zoom="true"/>
+        <Node id="grupo/nuevo.jsp" x="827" y="651" zoom="true"/>
+        <Node id="usuario/editar.jsp" x="417" y="679" zoom="true"/>
+        <Node id="rol/failed.jsp" x="203" y="251" zoom="true"/>
+        <Node id="rol/nuevo.jsp" x="438" y="167" zoom="true"/>
+        <Node id="logout.jsp" x="1120" y="25" zoom="true"/>
+        <Node id="grupo/addrol.jsp" x="876" y="919" zoom="true"/>
+        <Node id="usuario/failed.jsp" x="293" y="925" zoom="true"/>
+        <Node id="grupo/failed.jsp" x="1124" y="931" zoom="true"/>
+        <Node id="login.jsp" x="1316" y="21" zoom="true"/>
+        <Node id="grupo/mostrar.jsp" x="1114" y="317" zoom="true"/>
+        <Node id="rol/mostrar.jsp" x="195" y="-179" zoom="true"/>
+        <Node id="usuario/nuevo.jsp" x="-38" y="661" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

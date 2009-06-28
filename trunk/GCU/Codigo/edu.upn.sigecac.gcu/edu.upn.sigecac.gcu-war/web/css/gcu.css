@@ -1,0 +1,113 @@
+/* 
+    Document   : gcu
+    Created on : 14/06/2009, 11:36:14 AM
+    Author     : MiamiWebmasters
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+.lnk{
+	color: #006bd2;
+	padding: 2px 0 2px 20px;
+	text-decoration: none;
+}
+.lnk:hover{
+	text-decoration:underline;
+}
+.edit{
+	height: 16px;
+	width: 16px;
+	background: transparent url(/gcu/img_gcu/pencil.png) no-repeat;
+}
+.delete{	
+	height: 16px;
+	width: 16px;
+	background: transparent url(/gcu/img_gcu/delete.png) no-repeat;
+}
+.title{
+	color: #686868;
+	padding: 0px;
+	margin: 0px;
+	font:bold 15px "Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+.m_curso{background: transparent url(/gcu/img_gcu/book.png) no-repeat center left;}
+.n_curso{background: transparent url(/gcu/img_gcu/book_add.png) no-repeat center left;}
+.s_curso{background: transparent url(/gcu/img_gcu/book_go.png) no-repeat center left;}
+
+.m_niveles{background: transparent url(/gcu/img_gcu/report.png) no-repeat center left;}
+
+.m_mallacurricular{background: transparent url(/gcu/img_gcu/malla.png) no-repeat center left;}
+
+.m_estandares{background: transparent url(/gcu/img_gcu/estandar.png) no-repeat center left;}
+	
+
+
+
+
+
+.tableGCU a,
+.tableGCU a:link,
+.tableGCU a:visited {border:none;}							
+	
+	
+.tableGCU {	
+	border-top:1px solid #e5eff8;
+	border-right:1px solid #e5eff8;
+	margin:0 auto;
+	border-collapse:collapse;
+	}
+.tableGCU caption {
+	color: #9ba9b4;
+	font-size:.7em;
+	letter-spacing:.1em;
+	margin:0 0 0 0;
+	padding:0;
+	caption-side:top;
+	text-align:center;
+	}	
+.tableGCU tr.odd td	{
+	background:#f7fbff
+	}
+.tableGCU tr.odd .column1	{
+	background:#f4f9fe;
+	}	
+.tableGCU td {
+	color:#678197;
+	border-bottom:1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.3em .3em;
+	text-align:center;
+	}				
+.tableGCU th {
+	font-weight:normal;
+	color: #678197;
+	text-align:left;
+	border-bottom: 1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.3em 1em;
+	}							
+.tableGCU thead th {
+	background:#f4f9fe url(/gcu/img_gcu/sombra.jpg) ;	
+	text-align:center;
+	font:bold 11px "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#66a3d3
+	}	
+tfoot th {
+	text-align:center;
+	background:#f4f9fe;
+	}	
+tfoot th strong {
+	font:bold 1.0em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	margin:.5em .5em .5em 0;
+	color:#66a3d3;
+		}		
+tfoot th em {
+	color:#f03b58;
+	font-weight: bold;
+	font-size: 0.9em;
+	font-style: normal;
+	}	
