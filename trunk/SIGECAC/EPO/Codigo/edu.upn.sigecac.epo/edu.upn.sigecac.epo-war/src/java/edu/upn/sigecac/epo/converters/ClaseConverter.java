@@ -26,11 +26,16 @@ public class ClaseConverter implements Converter {
 
     @Override
     public Object getAsObject(FacesContext context, UIComponent component, String value) {
-        if (value == null || (value.trim().length() == 0)){
+
+        return controlador.porId("12");
+
+
+        /*if (value == null || (value.trim().length() == 0)){
             return value;
         }else{
             return controlador.porId(value);
-        }
+        }*/
+        
     }
 
     @Override

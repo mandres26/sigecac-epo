@@ -22,6 +22,7 @@
     <br /><br />
     <span class="titulo">Nuevo Periodo Académico</span>
     <br /><br /><br />
+    <h:messages id="messages" showDetail="true" />
 
     <!--<input type="button" id="jqTestId" class="jqTest" value="Test" />-->
 

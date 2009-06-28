@@ -202,6 +202,14 @@
             <from-outcome>volver</from-outcome>
             <to-view-id>/index.jsp</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>periodo_editar</from-outcome>
+            <to-view-id>/periodo/editar.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/periodo/listar.jsp</to-view-id>
+        </navigation-case>
     </navigation-rule>
     <navigation-rule>
         <from-view-id>/periodo/nuevo.jsp</from-view-id>
@@ -309,6 +317,14 @@
             <from-outcome>volver</from-outcome>
             <to-view-id>/index.jsp</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>alarma_editar</from-outcome>
+            <to-view-id>/alarma/editar.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/alarma/listar.jsp</to-view-id>
+        </navigation-case>
     </navigation-rule>
     <navigation-rule>
         <from-view-id>/alarma/nuevo.jsp</from-view-id>
@@ -319,6 +335,58 @@
         <navigation-case>
             <from-outcome>ok</from-outcome>
             <to-view-id>/alarma/listar.jsp</to-view-id>
+        </navigation-case>
+
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/periodo/editar.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/periodo/listar.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/alarma/editar.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/alarma/listar.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/esquema/listar.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>esquema_nuevo</from-outcome>
+            <to-view-id>/esquema/nuevo.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>volver</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/esquema/listar.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>esquema_editar</from-outcome>
+            <to-view-id>/esquema/editar.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/esquema/nuevo.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/esquema/listar.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>volver</from-outcome>
+            <to-view-id>/esquema/listar.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/esquema/editar.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/esquema/listar.jsp</to-view-id>
         </navigation-case>
     </navigation-rule>
 </faces-config>

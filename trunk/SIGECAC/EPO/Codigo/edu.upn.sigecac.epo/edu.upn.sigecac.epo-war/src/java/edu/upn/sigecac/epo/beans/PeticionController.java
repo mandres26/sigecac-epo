@@ -116,8 +116,8 @@ public class PeticionController {
             peticion.setReferencia(buffer);
             
 
-            this.peticion.setInicio(new Date());
-            this.peticion.setFin(new Date());
+            //this.peticion.setInicio(new Date());
+            //this.peticion.setFin(new Date());
             local.registrar(peticion);
         } catch (Exception ex) {
             Logger.getLogger(PeticionController.class.getName()).log(Level.SEVERE, null, ex);
