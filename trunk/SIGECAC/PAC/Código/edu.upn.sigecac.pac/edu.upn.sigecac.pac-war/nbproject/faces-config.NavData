@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="ResultadoPrograma/matriz.jsp" x="150" y="150" zoom="true"/>
+        <Node id="ResultadoPrograma/actualizarResultadoPrograma.jsp" x="566" y="202" zoom="true"/>
+        <Node id="index.jsp" x="1348" y="711" zoom="true"/>
+        <Node id="login-error.jsp" x="432" y="40" zoom="true"/>
+        <Node id="MatrizObjetivoEducacional/mostrarMatrizObjetivoEducacional.jsp" x="1132" y="97" zoom="true"/>
+        <Node id="Criterio/actualizarCriterio.jsp" x="1174" y="368" zoom="true"/>
+        <Node id="CapacidadMedible/nuevoCapacidadMedible.jsp" x="746" y="574" zoom="true"/>
+        <Node id="ObjetivoEducacional/mostrarObjetivoEducacional.jsp" x="1776" y="882" zoom="true"/>
+        <Node id="CapacidadMedible/listarCapacidadMedible.jsp" x="900" y="720" zoom="true"/>
+        <Node id="Criterio/nuevoCriterio.jsp" x="1319" y="319" zoom="true"/>
+        <Node id="ReporteResultadoPrograma/nuevoReporteResultadoPrograma.jsp" x="779" y="852" zoom="true"/>
+        <Node id="MatrizResultadoPrograma/nuevoMatrizResultadoPrograma.jsp" x="936" y="6" zoom="true"/>
+        <Node id="Criterio/mostrarCriterio.jsp" x="1326" y="270" zoom="true"/>
+        <Node id="logout.jsp" x="350" y="248" zoom="true"/>
+        <Node id="Criterio/listarCriterio.jsp" x="935" y="391" zoom="true"/>
+        <Node id="Nivel/nuevoNivel.jsp" x="887" y="282" zoom="true"/>
+        <Node id="ReporteObjetivoEducacional/nuevoReporteObjetivoEducacional.jsp" x="606" y="777" zoom="true"/>
+        <Node id="CapacidadMedible/mostrarCapacidadMedible.jsp" x="1121" y="465" zoom="true"/>
+        <Node id="ResultadoPrograma/nuevoResultadoPrograma.jsp" x="402" y="640" zoom="true"/>
+        <Node id="MatrizResultadoPrograma/actualizarMatrizResultadoPrograma.jsp" x="150" y="900" zoom="true"/>
+        <Node id="Nivel/listarNivel.jsp" x="1077" y="256" zoom="true"/>
+        <Node id="ResultadoPrograma/listarResultadoPrograma.jsp" x="638" y="458" zoom="true"/>
+        <Node id="ObjetivoEducacional/actualizarObjetivoEducacional.jsp" x="1999" y="810" zoom="true"/>
+        <Node id="MatrizObjetivoEducacional/actualizarMatrizObjetivoEducacional.jsp" x="889" y="-35" zoom="true"/>
+        <Node id="Nivel/mostrarNivel.jsp" x="997" y="146" zoom="true"/>
+        <Node id="ObjetivoEducacional/listarObjetivoEducacional.jsp" x="1775" y="550" zoom="false"/>
+        <Node id="MatrizResultadoPrograma/listarMatrizResultadoPrograma.jsp" x="323" y="79" zoom="true"/>
+        <Node id="CapacidadMedible/actualizarCapacidadMedible.jsp" x="1546" y="472" zoom="true"/>
+        <Node id="MatrizResultadoPrograma/mostrarMatrizResultadoPrograma.jsp" x="951" y="73" zoom="true"/>
+        <Node id="ObjetivoEducacional/nuevoObjetivoEducacional.jsp" x="1562" y="772" zoom="true"/>
+        <Node id="MatrizObjetivoEducacional/listarMatrizObjetivoEducacional.jsp" x="404" y="-31" zoom="true"/>
+        <Node id="Nivel/actualizarNivel.jsp" x="1156" y="201" zoom="true"/>
+        <Node id="ResultadoPrograma/mostrarResultadoPrograma.jsp" x="458" y="340" zoom="true"/>
+        <Node id="login.jsp" x="150" y="450" zoom="true"/>
+        <Node id="MatrizObjetivoEducacional/nuevoMatrizObjetivoEducacional.jsp" x="1017" y="42" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

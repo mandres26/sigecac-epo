@@ -1,0 +1,13 @@
+<%@ page pageEncoding="ISO-8859-1" %>
+									<div class="menu" id="principal">
+										<div class="top">
+											<div class="spacer"></div>
+											<div class="text">Men&uacute; Principal</div>
+										</div>
+										<div class="middle">
+                                            <%@include file="menu_temp.jspf" %>
+                                        </div>
+										<div class="bottom"></div>
+									</div>
+
+

@@ -1,0 +1,31 @@
+<%@ page pageEncoding="ISO-8859-1" %>
+<div id="cabecera">
+    <div class="left"></div>
+    <div class="right">
+        <div class="top">
+            <div class="spacer"></div>
+            <div id="infoline">
+                <label>Docente:</label> <span>Jorge S&aacute;nchez Castro</span>
+                <label>&Uacute;ltimo Login</label> <span>2009-03-30 @ 16:32:44</span>
+                <a href="/pac/faces/logout.jsp">[Cerrar Sesi&oacute;n]</a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="spacer"></div>
+            <div id="iconbar">
+                <a href="#"><img src="/seg/img/icon_contacto.png" alt="Cont&aacute;ctenos" border="0" /></a>
+                <a href="#"><img src="/seg/img/icon_faq.png" alt="FAQ" border="0" /></a>
+                <a href="#"><img src="/seg/img/icon_ayuda.png" alt="Ayuda" border="0" /></a>
+                <a href="#"><img src="/seg/img/icon_mapa.png" alt="Mapa del Sitio" border="0" /></a>
+                <a href="/seg"><img src="/seg/img/icon_inicio.png" alt="Inicio" border="0" /></a>
+                <div class="divbr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="divbr"></div>
+</div>
+
+
+<div id="centro">
+
+<div class="spacer_centro_inicio"></div>
