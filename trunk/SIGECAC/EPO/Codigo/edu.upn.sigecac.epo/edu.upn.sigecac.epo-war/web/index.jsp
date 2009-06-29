@@ -28,72 +28,85 @@
     <div>
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar periodo académico" />
         <br />
-        <h:outputText value="********************." />
         <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="El Registro de Periódo Académico hace referencia al intervalo correspondiente a un ciclo académico. Durante un mismo año existen tres periódos académicos, de enero a febrero; de marzo a julio y de agosto a diciembre." />
+        <h:outputText value="********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar esquema de grupos" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="El Registro de los Esquemas de Grupo lo realizan los docentes de la Escuela de Ingenieria de Sistemas cuando asignan un trabajo grupal, los esquemas de grupo pueden variar dependiendo del curso y la clase a la cual se le ha asignado la petición del trabajo."  />
         <h:outputText value="********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar grupos de alumnos" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="El Registro de Grupo de Alumnos lo realizan los docentes de la Escuela de Ingeniería de Sistemas, dependiendo el esquema de grupo, el curso y la clase a la cual se le ha asignado la petición del trabajo."  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar petición de trabajo" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Publicar trabajo solicitado" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Publicar trabajo propio" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Realizar búsqueda" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Ver detalle trabajo" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Validar comentario" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Ver detalle trabajo" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar alarma" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar Rúbrica" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Ver detalle Rúbrica" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Calificar Publicación de Trabajo" />
         <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
         <br />
         <br />
