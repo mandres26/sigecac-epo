@@ -4,3 +4,18 @@ andate pues!!!
 
 select * from V_SEG_USUARIO;
 select * from V_SEG_USUARIO_GRUPO;
+
+CREATE VIEW [dbo].[V_SEG_USUARIO_GRUPO]
+AS
+SELECT     dbo.SEG_USUARIO.USER_NAME, dbo.SEG_GRUPO.NOMBRE
+FROM         dbo.SEG_GRUPO CROSS JOIN
+                      dbo.SEG_USUARIO
+
+GO
+
+CREATE VIEW [dbo].[V_SEG_USUARIO]
+AS
+SELECT     USER_NAME, PASSWORD
+FROM         dbo.SEG_USUARIO
+
+GO
