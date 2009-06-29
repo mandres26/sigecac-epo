@@ -1,3 +1,6 @@
 vacio
 quiero ir a tomar un cafe!!!
 andate pues!!!
+
+select * from V_SEG_USUARIO;
+select * from V_SEG_USUARIO_GRUPO;
