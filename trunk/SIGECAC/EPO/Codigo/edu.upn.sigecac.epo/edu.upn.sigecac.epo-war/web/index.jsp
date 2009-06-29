@@ -20,7 +20,10 @@
 
     <br /><br />
     <div class="centrar" style="font-size:large; color:navy; font-weight:bold"><h:outputText value="Bienvenido a ePortafolio" /></div>
-    <br /><br />
+    <br />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Eportafolio se encarga de registrar, organizar y medir las evidencias académicas generadas por los alumnos, estas evidencias demostrarán los lofros alcanzados a lo largo del desarrollo de su vida académica. Eportafolio También sirve como repositorio de trabajos académicos que puedan ser usados como referencia a las nuevas promociones." />
+    <br />
+    <br />
     <%@include file="WEB-INF/jspf/bloque_fin.jspf" %>
     <%@include file="WEB-INF/jspf/bloque_inicio.jspf" %>
 
@@ -82,13 +85,13 @@
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar Rúbrica" />
         <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Calificar Publicación de Trabajo" />
         <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="La Calificación de Trabajos la realizan los docentes........"  />
         <h:outputText value="*********************." />
         <br />
         <br />
