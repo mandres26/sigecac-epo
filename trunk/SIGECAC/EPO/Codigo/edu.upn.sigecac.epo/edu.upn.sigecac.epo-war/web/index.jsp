@@ -64,7 +64,7 @@
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Realizar búsqueda" />
         <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Las búsquedas las podrán realizar cualquiera de los usuarios del Sistema."  />
         <h:outputText value="*********************." />
         <br />
         <br />
@@ -75,12 +75,6 @@
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Validar comentario" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Ver detalle trabajo" />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
