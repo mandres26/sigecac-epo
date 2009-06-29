@@ -111,8 +111,8 @@
         <form-login-config>
             <form-login-page>/faces/login.jsp</form-login-page>
             <form-error-page>/faces/login-error.jsp</form-error-page>
-        </form-login-config>
-    </login-config>
+            </form-login-config>
+        </login-config>
     <security-role>
         <description/>
         <role-name>Docente</role-name>

@@ -86,7 +86,18 @@
             <http-method>TRACE</http-method>
             <http-method>DELETE</http-method>
         </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>Alumno</role-name>
+            <role-name>Docente</role-name>
+            </auth-constraint>
+        <user-data-constraint>
+            <description/>
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
         </security-constraint>
+
+        
     <login-config>
         <auth-method>FORM</auth-method>
         <realm-name>sigecac-realm</realm-name>
@@ -95,6 +106,8 @@
             <form-error-page>/faces/login-error.jsp</form-error-page>
         </form-login-config>
     </login-config>
+
+
     <security-role>
         <description/>
         <role-name>Alumno</role-name>
