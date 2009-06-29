@@ -68,12 +68,6 @@
         <h:outputText value="*********************." />
         <br />
         <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Ver detalle trabajo" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Validar comentario" />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
@@ -87,12 +81,6 @@
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar Rúbrica" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Ver detalle Rúbrica" />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
         <h:outputText value="*********************." />
