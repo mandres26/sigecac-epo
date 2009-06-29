@@ -70,13 +70,13 @@
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Validar comentario" />
         <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Los alumnos podrán publicar o rechazar los comentarios recibidos por los usuarios del sistema SIGECAC."  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar alarma" />
         <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Los usuarios podrán registrar Alarmas solicitando alguna información adicional, para que pueda ser respondida por cualquier otro usuario."  />
         <h:outputText value="*********************." />
         <br />
         <br />
