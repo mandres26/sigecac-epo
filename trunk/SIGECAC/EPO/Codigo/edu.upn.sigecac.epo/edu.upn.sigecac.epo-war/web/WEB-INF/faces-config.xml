@@ -389,4 +389,56 @@
             <to-view-id>/esquema/listar.jsp</to-view-id>
         </navigation-case>
     </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/rubrica2/listar.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>rubrica_ver</from-outcome>
+            <to-view-id>/rubrica2/ver.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>rubrica_nuevo</from-outcome>
+            <to-view-id>/rubrica2/nuevo.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>volver</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/rubrica2/ver.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>volver</from-outcome>
+            <to-view-id>/rubrica2/listar.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/rubrica2/nuevo.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>volver</from-outcome>
+            <to-view-id>/rubrica2/listar.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/rubrica2/listar.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>criterio_nuevo</from-outcome>
+            <to-view-id>/criterio/nuevo.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>refresh</from-outcome>
+            <to-view-id>/rubrica2/nuevo.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/criterio/nuevo.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>volver</from-outcome>
+            <to-view-id>/rubrica2/nuevo.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/rubrica2/nuevo.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
 </faces-config>
