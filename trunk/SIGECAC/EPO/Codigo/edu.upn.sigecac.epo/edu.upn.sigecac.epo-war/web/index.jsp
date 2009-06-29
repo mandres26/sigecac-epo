@@ -29,8 +29,7 @@
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar periodo académico" />
         <br />
         <h:outputText value="********************." />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold"
-        value="El Registro de Periódo Académico hace referencia al intervalo correspondiente a un ciclo académico. Durante un mismo año existen tres periódos académicos, de enero a febrero; de marzo a julio y de agosto a diciembre." />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="El Registro de Periódo Académico hace referencia al intervalo correspondiente a un ciclo académico. Durante un mismo año existen tres periódos académicos, de enero a febrero; de marzo a julio y de agosto a diciembre." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar esquema de grupos" />
