@@ -55,7 +55,11 @@ public class EsquemaGrupoController {
 
     public String Registrar (){
         try {
-            esquemaGrupo.setFidGenClase(12);
+            //esquemaGrupo.setFidGenClase(5);
+            //EsquemaGrupo egtest = new EsquemaGrupo();
+            //egtest.setFidGenClase(5);
+            //egtest.setNombre("test");
+            esquemaGrupo.setFidGenClase(selClase.getIdClase());
             local.registrar(esquemaGrupo);
 
         } catch (Exception ex) {
@@ -113,10 +117,10 @@ public class EsquemaGrupoController {
     }
 
     public SelectItem[] getItemsEsquemasGrupoPorClase() {
-        List<EsquemaGrupo> lista = listarPorClase(selClase.getIdClase().toString());
-        SelectItem[] select = new SelectItem[lista.size()];
+        List<EsquemaGrupo> listaEG = listarPorClase(selClase.getIdClase().toString());
+        SelectItem[] select = new SelectItem[listaEG.size()];
         int i = 0;
-        for (EsquemaGrupo x : lista) {
+        for (EsquemaGrupo x : listaEG) {
             select[i++] = new SelectItem(x, x.getNombre());
         }
         return select;
@@ -125,10 +129,10 @@ public class EsquemaGrupoController {
     public SelectItem[] getItemsEsquemasGrupoPorClaseRV() {
         FacesContext fc = FacesContext.getCurrentInstance();
         Clase c = (Clase) fc.getApplication().getVariableResolver().resolveVariable(fc, "item");
-        List<EsquemaGrupo> lista = listarPorClase(c.getIdClase().toString());
-        SelectItem[] select = new SelectItem[lista.size()];
+        List<EsquemaGrupo> listaEG = listarPorClase(c.getIdClase().toString());
+        SelectItem[] select = new SelectItem[listaEG.size()];
         int i = 0;
-        for (EsquemaGrupo x : lista) {
+        for (EsquemaGrupo x : listaEG) {
             select[i++] = new SelectItem(x, x.getNombre());
         }
         return select;

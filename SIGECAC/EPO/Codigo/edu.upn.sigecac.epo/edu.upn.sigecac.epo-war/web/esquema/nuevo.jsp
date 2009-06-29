@@ -18,14 +18,12 @@
     <%@include file="../WEB-INF/jspf/menu_secundario.jspf" %>
     <%@include file="../WEB-INF/jspf/cuadro_medio.jspf" %>
     <%@include file="../WEB-INF/jspf/bloque_inicio.jspf" %>
-    <!--<script language="javascript" src="/epo/_js/periodo_nuevo.js" type="text/javascript"></script>-->
     <br /><br />
     <span class="titulo">Nueva Esquema de Grupo</span>
     <br /><br /><br />
 
-    <!--<input type="button" id="jqTestId" class="jqTest" value="Test" />-->
 
-    <h:form enctype="multipart/form-data">
+    <h:form>
 
         <h:messages showDetail="true" />
 
@@ -34,7 +32,7 @@
 
             
             <h:outputLabel styleClass="outputLabel" for="cboClase" value="Clase" />
-            <h:selectOneMenu id="cboClase" styleClass="selectOneMenu" value="#{EsquemaGrupo.esquemaGrupo.fidGenClase}" converter="ClaseConverter">
+            <h:selectOneMenu id="cboClase" styleClass="selectOneMenu" value="#{EsquemaGrupo.selClase}" converter="ClaseConverter">
                 <f:selectItems value="#{Clase.itemsClases}" />
             </h:selectOneMenu>
             <h:outputText styleClass="outputText" value="Seleccionar a que clase se esta asignando este Trabajo" />
