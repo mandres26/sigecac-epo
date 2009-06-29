@@ -154,6 +154,11 @@ public class RubricaController {
         return "rubrica_nuevoCriterio";
     }
 
+    public String nuevoCE2() {
+        criterioEvaluacion = new CriterioEvaluacion();
+        return "criterio_nuevo";
+    }
+
     public String registrar() {
         try {
             local.registrar(rubrica);
