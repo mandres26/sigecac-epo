@@ -46,19 +46,19 @@
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar petición de trabajo" />
         <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="El Registro de la Petición de Trabajo lo realizan los docentes de la Escuela de Ingeniería de Sistemas, ingresando una descripción de lo que estan solicitando, así mismo registrarán la fecha y hora límite en la cual los alumnos tienen que responder a esta petición."  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Publicar trabajo solicitado" />
         <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Este caso de uso es realizado por los alumnos de la Escuela de Ingeniería de Sistemas en respuesta a la petición de trabajo asignada por los docentes."  />
         <h:outputText value="*********************." />
         <br />
         <br />
         <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Publicar trabajo propio" />
         <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value=""  />
+        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Los alumnos de la Escuela de Ingeniería de Sistemas, podran publicar sus propias investigaciones sin necesidad de responder a una petición."  />
         <h:outputText value="*********************." />
         <br />
         <br />
