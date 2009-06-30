@@ -47,6 +47,7 @@
     <class>edu.upn.sigecac.pac.be.Nivel</class>
     <class>edu.upn.sigecac.pac.be.ObjetivoEducacional</class>
     <class>edu.upn.sigecac.pac.be.ResultadoPrograma</class>
+    <class>edu.upn.sigecac.epo.be.NivelEpo</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties/>
   </persistence-unit>

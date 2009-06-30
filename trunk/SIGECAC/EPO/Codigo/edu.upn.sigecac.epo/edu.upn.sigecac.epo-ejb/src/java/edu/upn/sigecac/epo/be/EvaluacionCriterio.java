@@ -26,27 +26,27 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "EPO_EVALUACION_CRITERIO")
-@NamedQueries({@NamedQuery(name = "EvaluacionCriterio.findAll", query = "SELECT e FROM EvaluacionCriterio e"), @NamedQuery(name = "EvaluacionCriterio.findByIdEvaluacionCriterio", query = "SELECT e FROM EvaluacionCriterio e WHERE e.idEvaluacionCriterio = :idEvaluacionCriterio"), @NamedQuery(name = "EvaluacionCriterio.findByValor", query = "SELECT e FROM EvaluacionCriterio e WHERE e.valor = :valor")})
+@NamedQueries({@NamedQuery(name = "EvaluacionCriterio.findAll", query = "SELECT e FROM EvaluacionCriterio e"), @NamedQuery(name = "EvaluacionCriterio.findByIdEvaluacionCriterio", query = "SELECT e FROM EvaluacionCriterio e WHERE e.idEvaluacionCriterio = :idEvaluacionCriterio")})
 public class EvaluacionCriterio implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
     @Column(name = "ID_EVALUACION_CRITERIO")
-    @GeneratedValue (strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long idEvaluacionCriterio;
     @Basic(optional = false)
     @Lob
     @Column(name = "COMENTARIO")
     private String comentario;
-    @Basic(optional = false)
-    @Column(name = "VALOR")
-    private short valor;
     @JoinColumn(name = "FID_CRITERIO_EVALUACION", referencedColumnName = "ID_CRITERIO_EVALUACION")
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private CriterioEvaluacion fidCriterioEvaluacion;
     @JoinColumn(name = "FID_EVALUACION_PUBLICACION", referencedColumnName = "ID_EVALUACION_PUBLICACION")
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private EvaluacionPublicacion fidEvaluacionPublicacion;
+    @JoinColumn(name = "FID_NIVEL", referencedColumnName = "ID_NIVEL")
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    private NivelEpo fidNivel;
 
     public EvaluacionCriterio() {
     }
@@ -55,10 +55,9 @@ public class EvaluacionCriterio implements Serializable {
         this.idEvaluacionCriterio = idEvaluacionCriterio;
     }
 
-    public EvaluacionCriterio(Long idEvaluacionCriterio, String comentario, short valor) {
+    public EvaluacionCriterio(Long idEvaluacionCriterio, String comentario) {
         this.idEvaluacionCriterio = idEvaluacionCriterio;
         this.comentario = comentario;
-        this.valor = valor;
     }
 
     public Long getIdEvaluacionCriterio() {
@@ -77,14 +76,6 @@ public class EvaluacionCriterio implements Serializable {
         this.comentario = comentario;
     }
 
-    public short getValor() {
-        return valor;
-    }
-
-    public void setValor(short valor) {
-        this.valor = valor;
-    }
-
     public CriterioEvaluacion getFidCriterioEvaluacion() {
         return fidCriterioEvaluacion;
     }
@@ -99,6 +90,14 @@ public class EvaluacionCriterio implements Serializable {
 
     public void setFidEvaluacionPublicacion(EvaluacionPublicacion fidEvaluacionPublicacion) {
         this.fidEvaluacionPublicacion = fidEvaluacionPublicacion;
+    }
+
+    public NivelEpo getFidNivel() {
+        return fidNivel;
+    }
+
+    public void setFidNivel(NivelEpo fidNivel) {
+        this.fidNivel = fidNivel;
     }
 
     @Override
@@ -118,10 +117,12 @@ public class EvaluacionCriterio implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 19 * hash + (this.idEvaluacionCriterio != null ? this.idEvaluacionCriterio.hashCode() : 0);
+        int hash = 3;
+        hash = 59 * hash + (this.idEvaluacionCriterio != null ? this.idEvaluacionCriterio.hashCode() : 0);
         return hash;
     }
+
+
 
     @Override
     public String toString() {

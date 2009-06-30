@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package edu.upn.sigecac.epo.be;
 
 import edu.upn.sigecac.pac.be.Criterio;
@@ -30,8 +29,9 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "EPO_CRITERIO_EVALUACION")
-@NamedQueries({@NamedQuery(name = "CriterioEvaluacion.findAll", query = "SELECT c FROM CriterioEvaluacion c"), @NamedQuery(name = "CriterioEvaluacion.findByIdCriterioEvaluacion", query = "SELECT c FROM CriterioEvaluacion c WHERE c.idCriterioEvaluacion = :idCriterioEvaluacion"), @NamedQuery(name = "CriterioEvaluacion.findByPeso", query = "SELECT c FROM CriterioEvaluacion c WHERE c.peso = :peso")})
+@NamedQueries({@NamedQuery(name = "CriterioEvaluacion.findAll", query = "SELECT c FROM CriterioEvaluacion c"), @NamedQuery(name = "CriterioEvaluacion.findByIdCriterioEvaluacion", query = "SELECT c FROM CriterioEvaluacion c WHERE c.idCriterioEvaluacion = :idCriterioEvaluacion"), @NamedQuery(name = "CriterioEvaluacion.findByPeso", query = "SELECT c FROM CriterioEvaluacion c WHERE c.peso = :peso"), @NamedQuery(name = "CriterioEvaluacion.findByNombre", query = "SELECT c FROM CriterioEvaluacion c WHERE c.nombre = :nombre")})
 public class CriterioEvaluacion implements Serializable {
+
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -44,25 +44,19 @@ public class CriterioEvaluacion implements Serializable {
     @Lob
     @Column(name = "COMENTARIO")
     private String comentario;
+    @Column(name = "NOMBRE")
+    private String nombre;
     @JoinColumn(name = "FID_RUBRICA", referencedColumnName = "ID_RUBRICA")
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private Rubrica fidRubrica;
-
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "fidCriterioEvaluacion", fetch = FetchType.LAZY)
+    private List<EvaluacionCriterio> evaluacionCriterioCollection;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "fidCriterioEvaluacion", fetch = FetchType.LAZY)
+    private List<NivelEpo> nivelEpoCollection;
     @JoinColumn(name = "FID_PAC_CRITERIO_EVALUACION", referencedColumnName = "ID_CRITERIO")
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private Criterio fidPACCriterio;
 
-    public Criterio getFidPACCriterio() {
-        return fidPACCriterio;
-    }
-
-    public void setFidPACCriterio(Criterio fidPACCriterio) {
-        this.fidPACCriterio = fidPACCriterio;
-    }
-
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "fidCriterioEvaluacion", fetch = FetchType.LAZY)
-    private List<EvaluacionCriterio> evaluacionCriterioCollection;
 
     public CriterioEvaluacion() {
     }
@@ -100,6 +94,14 @@ public class CriterioEvaluacion implements Serializable {
         this.comentario = comentario;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public Rubrica getFidRubrica() {
         return fidRubrica;
     }
@@ -115,6 +117,24 @@ public class CriterioEvaluacion implements Serializable {
     public void setEvaluacionCriterioCollection(List<EvaluacionCriterio> evaluacionCriterioCollection) {
         this.evaluacionCriterioCollection = evaluacionCriterioCollection;
     }
+
+    public List<NivelEpo> getNivelEpoCollection() {
+        return nivelEpoCollection;
+    }
+
+    public void setNivelEpoCollection(List<NivelEpo> nivelEpoCollection) {
+        this.nivelEpoCollection = nivelEpoCollection;
+    }
+
+    public Criterio getFidPACCriterio() {
+        return fidPACCriterio;
+    }
+
+    public void setFidPACCriterio(Criterio fidPACCriterio) {
+        this.fidPACCriterio = fidPACCriterio;
+    }
+
+    
 
     @Override
     public boolean equals(Object obj) {
@@ -139,10 +159,8 @@ public class CriterioEvaluacion implements Serializable {
     }
 
 
-
     @Override
     public String toString() {
         return "edu.upn.sigecac.epo.be.CriterioEvaluacion[idCriterioEvaluacion=" + idCriterioEvaluacion + "]";
     }
-
 }

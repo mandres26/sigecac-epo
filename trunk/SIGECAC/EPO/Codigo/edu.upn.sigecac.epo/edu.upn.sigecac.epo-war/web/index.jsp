@@ -17,87 +17,76 @@
     <%@include file="WEB-INF/jspf/menu_principal.jspf" %>
     <%@include file="WEB-INF/jspf/cuadro_medio.jspf" %>
     <%@include file="WEB-INF/jspf/bloque_inicio.jspf" %>
+<style>
+    .tituloUC{
+        font-size:small;
+        color:navy;
+        font-style:normal;
+        font-weight:bold;
+        display: run-in;
+        margin-bottom: 10px;
+    }
+    .descripcionUC{
+        display: run-in;
+        margin: 0px 50px 20px 50px;
+        text-align: justify;
+    }
+    .justificado{
+        text-align: justify;
+        margin: 0px 50px 20px 50px;
+    }
+
+</style>
 
     <br /><br />
     <div class="centrar" style="font-size:large; color:navy; font-weight:bold"><h:outputText value="Bienvenido a ePortafolio" /></div>
     <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Eportafolio se encarga de registrar, organizar y medir las evidencias académicas generadas por los alumnos, estas evidencias demostrarán los lofros alcanzados a lo largo del desarrollo de su vida académica. Eportafolio También sirve como repositorio de trabajos académicos que puedan ser usados como referencia a las nuevas promociones." />
-    <br />
-    <br />
+    <div class="justificado">
+        <h:outputText style="font-weight: bold;" value="ePortafolio" />
+        <h:outputText value=" se encarga de registrar, organizar y medir las evidencias académicas generadas por los alumnos, estas evidencias demostrarán los lofros alcanzados a lo largo del desarrollo de su vida académica. Eportafolio También sirve como repositorio de trabajos académicos que puedan ser usados como referencia a las nuevas promociones." />
+    </div>
     <%@include file="WEB-INF/jspf/bloque_fin.jspf" %>
     <%@include file="WEB-INF/jspf/bloque_inicio.jspf" %>
 
     <br />
+    
     <div>
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar periodo académico" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="El Registro de Periódo Académico hace referencia al intervalo correspondiente a un ciclo académico. Durante un mismo año existen tres periódos académicos, de enero a febrero; de marzo a julio y de agosto a diciembre." />
-        <h:outputText value="********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar esquema de grupos" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="El Registro de los Esquemas de Grupo lo realizan los docentes de la Escuela de Ingenieria de Sistemas cuando asignan un trabajo grupal, los esquemas de grupo pueden variar dependiendo del curso y la clase a la cual se le ha asignado la petición del trabajo."  />
-        <h:outputText value="********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar grupos de alumnos" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="El Registro de Grupo de Alumnos lo realizan los docentes de la Escuela de Ingeniería de Sistemas, dependiendo el esquema de grupo, el curso y la clase a la cual se le ha asignado la petición del trabajo."  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar petición de trabajo" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="El Registro de la Petición de Trabajo lo realizan los docentes de la Escuela de Ingeniería de Sistemas, ingresando una descripción de lo que estan solicitando, así mismo registrarán la fecha y hora límite en la cual los alumnos tienen que responder a esta petición."  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Publicar trabajo solicitado" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Este caso de uso es realizado por los alumnos de la Escuela de Ingeniería de Sistemas en respuesta a la petición de trabajo asignada por los docentes."  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Publicar trabajo propio" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Los alumnos de la Escuela de Ingeniería de Sistemas, podran publicar sus propias investigaciones sin necesidad de responder a una petición."  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Realizar búsqueda" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Las búsquedas las podrán realizar cualquiera de los usuarios del Sistema."  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Validar comentario" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Los alumnos podrán publicar o rechazar los comentarios recibidos por los usuarios del sistema SIGECAC."  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar alarma" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="Los usuarios podrán registrar Alarmas solicitando alguna información adicional, para que pueda ser respondida por cualquier otro usuario."  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Registrar Rúbrica" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:italic; font-weight:bold" value="Calificar Publicación de Trabajo" />
-        <br />
-        <h:outputText style="font-size:small; color:navy; font-style:normal; font-weight:bold" value="La Calificación de Trabajos la realizan los docentes........"  />
-        <h:outputText value="*********************." />
-        <br />
-        <br />
-        <div class="centrar">
-            <a href="#"><img src="/epo/img/menu_temp.jpg" border="0"/></a>
-        </div>
+        <h:outputText styleClass="tituloUC" value="Registrar periodo académico" />
+        <h:outputText styleClass="descripcionUC" value="El Registro de Periódo Académico hace referencia al intervalo correspondiente a un ciclo académico. Durante un mismo año existen tres periódos académicos, de enero a febrero; de marzo a julio y de agosto a diciembre." />
+
+        <h:outputText styleClass="tituloUC" value="Registrar esquema de grupos" />
+        <h:outputText styleClass="descripcionUC" value="El Registro de los Esquemas de Grupo lo realizan los docentes de la Escuela de Ingenieria de Sistemas cuando asignan un trabajo grupal, los esquemas de grupo pueden variar dependiendo del curso y la clase a la cual se le ha asignado la petición del trabajo."  />
+
+        <h:outputText styleClass="tituloUC" value="Registrar grupos de alumnos" />
+        <h:outputText styleClass="descripcionUC" value="El Registro de Grupo de Alumnos lo realizan los docentes de la Escuela de Ingeniería de Sistemas, dependiendo el esquema de grupo, el curso y la clase a la cual se le ha asignado la petición del trabajo."  />
+
+        <h:outputText styleClass="tituloUC" value="Registrar petición de trabajo" />
+        <h:outputText styleClass="descripcionUC" value="El Registro de la Petición de Trabajo lo realizan los docentes de la Escuela de Ingeniería de Sistemas, ingresando una descripción de lo que estan solicitando, así mismo registrarán la fecha y hora límite en la cual los alumnos tienen que responder a esta petición."  />
+
+        <h:outputText styleClass="tituloUC" value="Publicar trabajo solicitado" />
+        <h:outputText styleClass="descripcionUC" value="Este caso de uso es realizado por los alumnos de la Escuela de Ingeniería de Sistemas en respuesta a la petición de trabajo asignada por los docentes."  />
+
+        <h:outputText styleClass="tituloUC" value="Publicar trabajo propio" />
+        <h:outputText styleClass="descripcionUC" value="Los alumnos de la Escuela de Ingeniería de Sistemas, podran publicar sus propias investigaciones sin necesidad de responder a una petición."  />
+
+        <h:outputText styleClass="tituloUC" value="Realizar búsqueda" />
+        <h:outputText styleClass="descripcionUC" value="Las búsquedas las podrán realizar cualquiera de los usuarios del Sistema."  />
+
+        <h:outputText styleClass="tituloUC" value="Validar comentario" />
+        <h:outputText styleClass="descripcionUC" value="Los alumnos podrán publicar o rechazar los comentarios recibidos por los usuarios del sistema SIGECAC."  />
+
+        <h:outputText styleClass="tituloUC" value="Registrar alarma" />
+        <h:outputText styleClass="descripcionUC" value="Los usuarios podrán registrar Alarmas solicitando alguna información adicional, para que pueda ser respondida por cualquier otro usuario."  />
+
+        <h:outputText styleClass="tituloUC" value="Registrar Rúbrica" />
+        <h:outputText styleClass="descripcionUC" value="xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx " />
+
+        <h:outputText styleClass="tituloUC" value="Calificar Publicación de Trabajo" />
+        <h:outputText styleClass="descripcionUC" value="La Calificación de Trabajos la realizan los docentes........ xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx " />
+    </div>
+    
+    <div class="centrar">
+        <a href="#"><img src="/epo/img/menu_temp.jpg" border="0"/></a>
     </div>
 
     <%@include file="WEB-INF/jspf/bloque_fin.jspf" %>

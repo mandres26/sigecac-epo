@@ -1,1 +1,9 @@
-08:03 p.m. 28/06/2009
+CAMBIOS EN LA DB:
+=================
+- Agregar la tabla EPO_NIVEL con script adjunto, en el script ya esta presente la relacion con EPO_CRITERIO.
+- En la tabla EPO_CRITERIO_EVALUACION agregar al final el campo NOMBRE [varchar(200),AllowNull=YES] 
+- En la tabla EPO_EVALUACION_CRITERIO eliminar el campo VALOR.
+- En la tabla EPO_EVALUACION_CRITERIO, agregar el campo FID_NIVEL (debajo de FID_CRITERIO_EVALUACION) y enlazarlo con la tabla EPO_NIVEL
+- El campo FID_PAC_CRITERIO_EVALUACION de la tabla EPO_CRITERIO_EVALUACION debe estar con el flag ALLOW NULL
+
+

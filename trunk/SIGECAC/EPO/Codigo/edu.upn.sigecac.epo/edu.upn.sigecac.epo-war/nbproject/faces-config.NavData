@@ -2,17 +2,17 @@
 <Scene Scope="Project" version="2">
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
-        <Node id="periodo/seleccionar.jsp" x="435" y="81" zoom="true"/>
         <Node id="grupo/editar.jsp" x="461" y="17" zoom="true"/>
-        <Node id="publicacion/calificar.jsp" x="681" y="808" zoom="true"/>
+        <Node id="periodo/seleccionar.jsp" x="435" y="81" zoom="true"/>
         <Node id="esquema/ver.jsp" x="33" y="48" zoom="false"/>
+        <Node id="publicacion/calificar.jsp" x="681" y="808" zoom="true"/>
         <Node id="publicacion/nuevo.jsp" x="23" y="349" zoom="true"/>
         <Node id="comentario/nuevo.jsp" x="296" y="141" zoom="true"/>
         <Node id="criterio/nuevo.jsp" x="896" y="301" zoom="true"/>
         <Node id="grupo/nuevo.jsp" x="232" y="80" zoom="true"/>
         <Node id="peticion/listar.jsp" x="360" y="444" zoom="true"/>
-        <Node id="rubrica2/nuevo.jsp" x="875" y="362" zoom="true"/>
         <Node id="rubrica/ver.jsp" x="647" y="394" zoom="true"/>
+        <Node id="rubrica2/nuevo.jsp" x="875" y="362" zoom="true"/>
         <Node id="esquema/listar.jsp" x="233" y="724" zoom="true"/>
         <Node id="periodo/editar.jsp" x="10" y="769" zoom="true"/>
         <Node id="rubrica2/ver(hint).jsp" x="1029" y="51" zoom="true"/>
@@ -27,13 +27,13 @@
         <Node id="publicacion/seleccionarCalificar.jsp" x="679" y="769" zoom="true"/>
         <Node id="index.jsp" x="487" y="594" zoom="true"/>
         <Node id="clase/seleccionar.jsp" x="237" y="112" zoom="true"/>
-        <Node id="periodo/nuevo.jsp" x="21" y="805" zoom="true"/>
         <Node id="login-error.jsp" x="1049" y="107" zoom="true"/>
+        <Node id="periodo/nuevo.jsp" x="21" y="805" zoom="true"/>
         <Node id="rubrica2/listar.jsp" x="909" y="446" zoom="true"/>
         <Node id="esquema/seleccionar.jsp" x="471" y="109" zoom="true"/>
+        <Node id="publicacion/resultadosBusqueda.jsp" x="963" y="822" zoom="true"/>
         <Node id="esquema/nuevo.jsp" x="221" y="768" zoom="true"/>
         <Node id="logout.jsp" x="531" y="142" zoom="true"/>
-        <Node id="publicacion/resultadosBusqueda.jsp" x="963" y="822" zoom="true"/>
         <Node id="publicacion/ver.jsp" x="1004" y="770" zoom="true"/>
         <Node id="rubrica/nuevo.jsp" x="629" y="347" zoom="true"/>
         <Node id="rubrica/ver(hint).jsp" x="1032" y="79" zoom="true"/>
@@ -45,9 +45,9 @@
         <Node id="alarma/ver.jsp" x="431" y="49" zoom="true"/>
         <Node id="periodo/listar.jsp" x="12" y="729" zoom="true"/>
         <Node id="rubrica2/ver.jsp" x="922" y="401" zoom="true"/>
-        <Node id="alarma/listar.jsp" x="465" y="731" zoom="true"/>
-        <Node id="esquema/editar.jsp" x="235" y="809" zoom="true"/>
         <Node id="periodo/ver.jsp" x="262" y="17" zoom="true"/>
+        <Node id="esquema/editar.jsp" x="235" y="809" zoom="true"/>
+        <Node id="alarma/listar.jsp" x="465" y="731" zoom="true"/>
         <Node id="login.jsp" x="1070" y="135" zoom="true"/>
         <Node id="rubrica2/nuevoCriterio.jsp" x="1012" y="23" zoom="true"/>
     </Scope>

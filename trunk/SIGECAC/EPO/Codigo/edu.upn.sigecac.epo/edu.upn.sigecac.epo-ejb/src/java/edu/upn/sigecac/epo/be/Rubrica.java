@@ -33,7 +33,7 @@ public class Rubrica implements Serializable {
     @Id
     @Basic(optional = false)
     @Column(name = "ID_RUBRICA")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long idRubrica;
     @Basic(optional = false)
     @Column(name = "CODIGO")
@@ -117,8 +117,8 @@ public class Rubrica implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 73 * hash + (this.idRubrica != null ? this.idRubrica.hashCode() : 0);
+        int hash = 3;
+        hash = 47 * hash + (this.idRubrica != null ? this.idRubrica.hashCode() : 0);
         return hash;
     }
 
