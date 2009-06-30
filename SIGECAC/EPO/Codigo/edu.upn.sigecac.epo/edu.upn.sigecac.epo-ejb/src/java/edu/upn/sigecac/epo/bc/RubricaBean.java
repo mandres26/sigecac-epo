@@ -38,7 +38,7 @@ public class RubricaBean implements RubricaLocal {
     public List<Rubrica> listar() throws Exception {
         List<Rubrica> lista = null;
         try {
-            lista = (List<Rubrica>) em.createNamedQuery("Rubrica.findAll").getResultList();
+            lista = (List<Rubrica>) em.createQuery("SELECT r FROM Rubrica r").getResultList();
         } catch (Exception e) {
             throw e;
         }

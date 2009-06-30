@@ -63,7 +63,7 @@
             </t:dataTable>
             <h:panelGroup>
                 <h:commandButton styleClass="commandButton" id="btnVolver4" value="Volver" action="volver"/>
-                <h:commandButton styleClass="commandButton_Main" id="btnVolver5" value="Guardar" action="#{Rubrica.registrar}"/>
+                <h:commandButton styleClass="commandButton_Main" id="btnVolver5" value="Guardar" action="#{Rubrica.registrar2}"/>
             </h:panelGroup>
         </h:panelGrid>
         

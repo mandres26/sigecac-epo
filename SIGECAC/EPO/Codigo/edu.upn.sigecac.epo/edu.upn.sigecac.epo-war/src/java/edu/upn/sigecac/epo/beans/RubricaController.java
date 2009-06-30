@@ -7,6 +7,7 @@ package edu.upn.sigecac.epo.beans;
 import edu.upn.sigecac.epo.bc.CriterioEvaluacionLocal;
 import edu.upn.sigecac.epo.bc.RubricaLocal;
 import edu.upn.sigecac.epo.be.CriterioEvaluacion;
+import edu.upn.sigecac.epo.be.NivelEpo;
 import edu.upn.sigecac.epo.be.Rubrica;
 import edu.upn.sigecac.pac.bc.CapacidadMedibleFacadeLocal;
 import edu.upn.sigecac.pac.bc.CriterioFacadeLocal;
@@ -45,6 +46,44 @@ public class RubricaController {
     private CriterioEvaluacion criterioEvaluacion;
     private List<CriterioEvaluacion> listaCriteriosEvaluacion;
     private CriterioEvaluacion criterioEvaluacionEliminar;
+    private NivelEpo n1 = new NivelEpo();
+    private NivelEpo n2 = new NivelEpo();
+    private NivelEpo n3 = new NivelEpo();
+    private NivelEpo n4 = new NivelEpo();
+
+    public NivelEpo getN1() {
+        return n1;
+    }
+
+    public void setN1(NivelEpo n1) {
+        this.n1 = n1;
+    }
+
+    public NivelEpo getN2() {
+        return n2;
+    }
+
+    public void setN2(NivelEpo n2) {
+        this.n2 = n2;
+    }
+
+    public NivelEpo getN3() {
+        return n3;
+    }
+
+    public void setN3(NivelEpo n3) {
+        this.n3 = n3;
+    }
+
+    public NivelEpo getN4() {
+        return n4;
+    }
+
+    public void setN4(NivelEpo n4) {
+        this.n4 = n4;
+    }
+
+
 
     public CriterioEvaluacion getCriterioEvaluacionEliminar() {
         return criterioEvaluacionEliminar;
@@ -62,11 +101,42 @@ public class RubricaController {
         this.listaCriteriosEvaluacion = listaCriteriosEvaluacion;
     }
 
-    public String agregarCriterio() {
+    /*public String agregarCriterio() {
         if (listaCriteriosEvaluacion == null) {
             listaCriteriosEvaluacion = new ArrayList<CriterioEvaluacion>();
         }
         criterioEvaluacion.setFidPACCriterio(criterioSeleccionado);
+        this.listaCriteriosEvaluacion.add(criterioEvaluacion);
+        return "ok";
+    }*/
+
+    public String agregarCriterio2() {
+        if (listaCriteriosEvaluacion == null) {
+            listaCriteriosEvaluacion = new ArrayList<CriterioEvaluacion>();
+        }
+
+        ArrayList<NivelEpo> listaNiveles = new ArrayList<NivelEpo>();
+        n1.setPeso(25);
+        n2.setPeso(50);
+        n3.setPeso(75);
+        n4.setPeso(100);
+        n1.setFidCriterioEvaluacion(criterioEvaluacion);
+        n2.setFidCriterioEvaluacion(criterioEvaluacion);
+        n3.setFidCriterioEvaluacion(criterioEvaluacion);
+        n4.setFidCriterioEvaluacion(criterioEvaluacion);
+        listaNiveles.add(n1);
+        listaNiveles.add(n2);
+        listaNiveles.add(n3);
+        listaNiveles.add(n4);
+
+        //criterioEvaluacion.setFidPACCriterio(null); // ya que se trata del UC Registrar RubricaEpo
+        //criterioEvaluacion.setFidRubrica(rubrica);
+        criterioEvaluacion.setNivelEpoCollection(listaNiveles);
+        n1 = new NivelEpo();
+        n2 = new NivelEpo();
+        n3 = new NivelEpo();
+        n4 = new NivelEpo();
+
         this.listaCriteriosEvaluacion.add(criterioEvaluacion);
         return "ok";
     }
@@ -167,6 +237,32 @@ public class RubricaController {
                 CriterioEvaluacion ce = listaCriteriosEvaluacion.get(i);
                 ce.setFidRubrica(rubrica);
                 localCriterioEvaluacion.registrar(ce);
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(RubricaController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return "ok";
+    }
+
+    public String registrar2() {
+        try {
+            local.registrar(rubrica);
+            int i;
+            for (i = 0; i < listaCriteriosEvaluacion.size(); i++) {
+                CriterioEvaluacion ce = listaCriteriosEvaluacion.get(i);
+                ce.setFidRubrica(rubrica);
+                localCriterioEvaluacion.registrar(ce);
+
+
+                    /*
+                    n1.setFidCriterioEvaluacion(ce);
+                    n2.setFidCriterioEvaluacion(ce);
+                    n3.setFidCriterioEvaluacion(ce);
+                    n4.setFidCriterioEvaluacion(ce);
+                    */
+
+
+
             }
         } catch (Exception ex) {
             Logger.getLogger(RubricaController.class.getName()).log(Level.SEVERE, null, ex);
