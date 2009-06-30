@@ -79,10 +79,10 @@
         <h:outputText styleClass="descripcionUC" value="Los usuarios podrán registrar Alarmas solicitando alguna información adicional, para que pueda ser respondida por cualquier otro usuario."  />
 
         <h:outputText styleClass="tituloUC" value="Registrar Rúbrica" />
-        <h:outputText styleClass="descripcionUC" value="xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx " />
+        <h:outputText styleClass="descripcionUC" value="El Registro de Rúbrica lo hacen los docentes, especificando sus criterios de evaluación, niveles de alcance y el peso; asi poder evaluar los trabajos publicados por los alumnos." />
 
         <h:outputText styleClass="tituloUC" value="Calificar Publicación de Trabajo" />
-        <h:outputText styleClass="descripcionUC" value="La Calificación de Trabajos la realizan los docentes........ xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxx " />
+        <h:outputText styleClass="descripcionUC" value="La Calificación de Trabajos la realizan los docentes, para eso previamente han hecho un registro de la Rúbrica con la cual van a evaluar la publicación que han realizado los alumnos." />
     </div>
     
     <div class="centrar">
