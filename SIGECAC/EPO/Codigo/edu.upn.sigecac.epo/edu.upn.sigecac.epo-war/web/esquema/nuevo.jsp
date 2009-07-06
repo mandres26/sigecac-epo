@@ -40,7 +40,7 @@
 
             <h:outputLabel styleClass="outputLabel" for="txtNombre" value="Nombre" />
             <h:inputText styleClass="inputText jqNombre" id="txtNombre" required="true" value="#{EsquemaGrupo.esquemaGrupo.nombre}" />
-            <h:outputText styleClass="outputText" value="aaa" />
+            <h:outputText styleClass="outputText" value="Ingresar el Nombre del Esquema de Grupos que va a registrar" />
 
 
             <h:panelGroup />

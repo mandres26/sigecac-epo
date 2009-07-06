@@ -30,7 +30,7 @@
                 <f:selectItem itemLabel="--- Seleccione un Resultado de Programa ---" />
                 <f:selectItems value="#{Rubrica.listaRPAsItems}" />
             </h:selectOneMenu>
-            <h:outputText styleClass="outputText" value="Nombre descriptivo de la Petición de Trabajo" />
+            <h:outputText styleClass="outputText" value="" />
 
             <%--
             <h:outputText styleClass="outputText" rendered="#{Rubrica.resultadoProgramaSeleccionado!=null}" value="#{Rubrica.resultadoProgramaSeleccionado.idResultadoPrograma}" />
@@ -44,7 +44,7 @@
                 <f:selectItem itemLabel="--- Seleccione una Capacidad Medible ---" />
                 <f:selectItems value="#{Rubrica.listaCMPorRPAsItems}" />
             </h:selectOneMenu>
-            <h:outputText styleClass="outputText" value="Nombre descriptivo de la Petición de Trabajo" rendered="#{Rubrica.resultadoProgramaSeleccionado!=null}" />
+            <h:outputText styleClass="outputText" value="" rendered="#{Rubrica.resultadoProgramaSeleccionado!=null}" />
 
             <%--
             <h:outputText styleClass="outputText" rendered="#{Rubrica.capacidadMedibleSeleccionada!=null}" value="#{Rubrica.capacidadMedibleSeleccionada.idCapacidadMedible}" />
@@ -58,7 +58,7 @@
                 <f:selectItem itemLabel="--- Seleccione un Criterio ---" />
                 <f:selectItems value="#{Rubrica.listaCriteriosPorCMAsItems}" />
             </h:selectOneMenu>
-            <h:outputText styleClass="outputText" value="Nombre descriptivo de la Petición de Trabajo" rendered="#{Rubrica.capacidadMedibleSeleccionada!=null}" />
+            <h:outputText styleClass="outputText" value="" rendered="#{Rubrica.capacidadMedibleSeleccionada!=null}" />
 
             <%--
             <h:outputText styleClass="outputText" rendered="#{Rubrica.criterioSeleccionado!=null}" value="#{Rubrica.criterioSeleccionado.idCriterio}" />
@@ -71,7 +71,7 @@
             <h:selectOneListbox id="lstNivel" styleClass="selectOneListbox" rendered="#{Rubrica.criterioSeleccionado!=null}" disabled="true" disabledClass="selectOneListbox_Disabled" converter="NivelConverter" >
                 <f:selectItems value="#{Rubrica.listaNivelesPorCriterioAsItems}" />
             </h:selectOneListbox>
-            <h:outputText styleClass="outputText" value="Nombre descriptivo de la Petición de Trabajo" rendered="#{Rubrica.criterioSeleccionado!=null}" />
+            <h:outputText styleClass="outputText" value="" rendered="#{Rubrica.criterioSeleccionado!=null}" />
 
 
             <h:outputLabel styleClass="outputLabel" for="txtPeso" value="Peso" rendered="#{Rubrica.criterioSeleccionado!=null}" />

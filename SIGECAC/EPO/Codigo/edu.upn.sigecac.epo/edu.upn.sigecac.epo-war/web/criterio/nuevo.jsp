@@ -38,11 +38,11 @@
 
             <h:outputLabel styleClass="outputLabel" for="txtPeso" value="Peso" />
             <h:inputText styleClass="inputTextSmall" id="txtPeso" required="false" value="#{Rubrica.criterioEvaluacion.peso}" />
-            <h:outputText styleClass="outputText" value="Nombre descriptivo de la Petición de Trabajo" />
+            <h:outputText styleClass="outputText" value="Ingrese el peso del criterio" />
 
             <h:outputLabel styleClass="outputLabel" for="txtComentario" value="Comentarios" />
             <h:inputTextarea styleClass="inputTextarea"  id="txtComentario" required="false" value="#{Rubrica.criterioEvaluacion.comentario}" />
-            <h:outputText styleClass="outputText" value="Descripción más completa de que es exactamente lo que se solicita al alumno o grupo." />
+            <h:outputText styleClass="outputText" value="Ingrese un comentario." />
 
 
 
@@ -50,8 +50,9 @@
             <h:panelGroup>
                 <h:outputLabel styleClass="outputLabel" for="txtN1" value="Nombre" /><br />
                 <h:inputText styleClass="inputTextSmall" id="txtN1" required="true" value="#{Rubrica.n1.nombre}" />
-                <h:outputLabel styleClass="outputLabel" for="txtN1d" value="Descripción" /><br />
+                <h:outputLabel styleClass="outputLabel" for="txtN1d" value="Descripción" /><br /><br />
                 <h:inputTextarea styleClass="inputTextarea smallBox"  id="txtN1d" required="false" value="#{Rubrica.n1.descripcion}" />
+                
             </h:panelGroup>
             <h:outputText styleClass="outputText" value="" />
 
