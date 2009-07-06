@@ -29,7 +29,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "EPO_COMENTARIO")
-@NamedQueries({@NamedQuery(name = "Comentario.findAll", query = "SELECT c FROM Comentario c"), @NamedQuery(name = "Comentario.findByIdComentario", query = "SELECT c FROM Comentario c WHERE c.idComentario = :idComentario"), @NamedQuery(name = "Comentario.findByFecha", query = "SELECT c FROM Comentario c WHERE c.fecha = :fecha")})
+@NamedQueries({@NamedQuery(name = "Comentario.findAll", query = "SELECT c FROM Comentario c"), @NamedQuery(name = "Comentario.findByIdComentario", query = "SELECT c FROM Comentario c WHERE c.idComentario = :idComentario"), @NamedQuery(name = "Comentario.findByFecha", query = "SELECT c FROM Comentario c WHERE c.fecha = :fecha"), @NamedQuery(name = "Comentario.findByValidado", query = "SELECT c FROM Comentario c WHERE c.validado = :validado")})
 public class Comentario implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -45,11 +45,13 @@ public class Comentario implements Serializable {
     @Column(name = "FECHA")
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
+    @Column(name = "VALIDADO")
+    private Boolean validado;
     @JoinColumn(name = "FID_PUBLICACION", referencedColumnName = "ID_PUBLICACION")
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Publicacion fidPublicacion;
     @JoinColumn(name = "FID_USUARIO", referencedColumnName = "ID_USUARIO")
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Usuario fidUsuario;
 
     public Comentario() {
@@ -89,6 +91,14 @@ public class Comentario implements Serializable {
         this.fecha = fecha;
     }
 
+    public Boolean getValidado() {
+        return validado;
+    }
+
+    public void setValidado(Boolean validado) {
+        this.validado = validado;
+    }
+
     public Publicacion getFidPublicacion() {
         return fidPublicacion;
     }
@@ -122,11 +132,10 @@ public class Comentario implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 79 * hash + (this.idComentario != null ? this.idComentario.hashCode() : 0);
+        int hash = 3;
+        hash = 71 * hash + (this.idComentario != null ? this.idComentario.hashCode() : 0);
         return hash;
     }
-
 
 
     @Override

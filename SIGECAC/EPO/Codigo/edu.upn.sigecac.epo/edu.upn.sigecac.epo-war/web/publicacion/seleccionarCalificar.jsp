@@ -42,8 +42,8 @@
                 </h:commandButton>
             </h:column>
             <f:facet name="footer">
-                <h:panelGrid columns="1">
-                    <h:commandButton styleClass="commandButton_Main" id="btnVolver" value="Volver" action="volver"/>
+                <h:panelGrid>
+                    <h:commandButton styleClass="commandButton" id="btnVolver" value="Volver" action="volver"/>
                 </h:panelGrid>
             </f:facet>
         </t:dataTable>

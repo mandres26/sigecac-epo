@@ -72,11 +72,11 @@
             <a4j:repeat id="detail" value="#{Rubrica.rubricaSeleccionada.criterioEvaluacionCollection}" var="criterio">
                 <tr class="fila">
                     <td>
-                        <strong><h:outputText value="#{criterio.fidPACCriterio.nombre}" /></strong><br />
+                        <strong><h:outputText value="#{criterio.nombre}" /></strong><br />
                         <h:outputText value="#{criterio.comentario}" />
                     </td>
                     <td><h:outputText value="#{criterio.peso}" /></td>
-                    <a4j:repeat id="detail2" value="#{criterio.fidPACCriterio.nivelCollection}" var="nivel">
+                    <a4j:repeat id="detail2" value="#{criterio.nivelEpoCollection}" var="nivel">
                         <td><h:outputText value="#{nivel.nombre}" /></td>
                     </a4j:repeat>
                 </tr>

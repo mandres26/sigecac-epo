@@ -19,7 +19,7 @@
                 <li><h:outputLink value="/epo/faces/publicacion/nuevoPropio.jsp">Publicar trabajo propio</h:outputLink></li>
                 <li><h:outputLink value="/epo/faces/publicacion/busqueda.jsp">Realizar búsqueda</h:outputLink></li>
                 
-                <li><h:outputLink value="/epo/faces/comentario/validar.jsp">Validar comentario</h:outputLink></li>
+                <li><h:outputLink value="/epo/faces/comentario/listarPublicaciones.jsp">Validar comentario</h:outputLink></li>
                 <li class="last"><h:outputLink value="/epo/faces/alarma/listar.jsp">Registrar alarma</h:outputLink></li>
                 
                 <li><h:outputLink value="/epo/faces/rubrica2/listar.jsp">Registrar Rúbrica</h:outputLink></li>

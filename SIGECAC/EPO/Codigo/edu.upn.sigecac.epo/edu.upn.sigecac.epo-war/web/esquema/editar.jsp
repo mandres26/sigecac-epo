@@ -31,11 +31,19 @@
 
         <h:panelGrid columns="3" styleClass="formulario" cellpadding="10" cellspacing="0" border="0">
 
+            <h:outputLabel styleClass="outputLabel" for="cboClase" value="Clase" />
+            <h:selectOneMenu id="cboClase" styleClass="selectOneMenu" value="#{EsquemaGrupo.selClase}" converter="ClaseConverter">
+                <f:selectItems value="#{Clase.itemsClases}" />
+            </h:selectOneMenu>
+            <h:outputText styleClass="outputText" value="Seleccionar a que clase se esta asignando este Trabajo" />
+
+
             <h:outputLabel styleClass="outputLabel" for="txtNombre" value="Nombre" />
             <h:inputText styleClass="inputText jqNombre" id="txtNombre" required="true" value="#{EsquemaGrupo.esquemaGrupo.nombre}" />
-            <h:outputText styleClass="outputText" value="aaa" />
+            <h:outputText styleClass="outputText" value="Edite el nombre del esquema de grupo." />
 
 
+            <h:panelGroup />
             <h:panelGroup>
                 <h:commandButton styleClass="commandButton_Main" value="Guardar" action="#{EsquemaGrupo.editar}" />
                 <h:commandButton styleClass="commandButton_Main" value="Volver" action="volver" />

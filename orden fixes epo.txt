@@ -1,0 +1,10 @@
+[ok] pub trabajo propio
+[ok] corregir enviar comentario--
+[ok] ver detalle de trabajo
+[ok] ver deta rubrica2 
+validar comentario
+registrar grupo
+
+----
+calificar publicacion (C1)
+servlet download trabajo

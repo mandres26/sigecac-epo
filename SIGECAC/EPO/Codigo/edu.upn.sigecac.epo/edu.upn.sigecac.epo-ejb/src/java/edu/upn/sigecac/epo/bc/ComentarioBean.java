@@ -6,6 +6,7 @@
 package edu.upn.sigecac.epo.bc;
 
 import edu.upn.sigecac.epo.be.Comentario;
+import edu.upn.sigecac.epo.be.Publicacion;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -67,6 +68,24 @@ public class ComentarioBean implements ComentarioLocal {
     public List<Comentario> listar() throws Exception {
         try {
             return (List<Comentario>) em.createNamedQuery("Comentario.findAll").getResultList();
+        } catch (Exception e) {
+            throw new Exception("Error: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public List<Comentario> listarNoValidados(Publicacion pub) throws Exception {
+        try {
+            return (List<Comentario>) em.createQuery("SELECT a FROM Comentario a WHERE a.validado = 0 AND a.fidPublicacion = :id").setParameter("id", pub).getResultList();
+        } catch (Exception e) {
+            throw new Exception("Error: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public List<Comentario> listarValidados(Publicacion pub) throws Exception {
+        try {
+            return (List<Comentario>) em.createQuery("SELECT a FROM Comentario a WHERE a.validado = 1 AND a.fidPublicacion = :id").setParameter("id", pub).getResultList();
         } catch (Exception e) {
             throw new Exception("Error: " + e.getMessage());
         }

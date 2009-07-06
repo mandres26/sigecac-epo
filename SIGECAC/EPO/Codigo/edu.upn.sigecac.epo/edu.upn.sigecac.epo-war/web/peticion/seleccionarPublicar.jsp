@@ -25,36 +25,39 @@
 
     <h:form>
 
-        <t:dataTable id="tblCliente"
+        <t:dataTable id="tblPeticiones3"
                      value="#{Peticion.listaPeticiones}"
                      var="item"
                      border="0"
                      styleClass="formulario" >
             <h:column>
                 <f:facet name="header"><h:outputText value="Título de la Petición" /></f:facet>
-                <h:outputText id="nombre" value="#{item.nombre}" /><br />
+                <h:outputText id="nombre7" value="#{item.nombre}" /><br />
             </h:column>
             <h:column>
                 <f:facet name="header"><h:outputText value="Tipo Archivo" /></f:facet>
-                <h:outputText id="tipoArchivo" value="#{item.fidTipoArchivo.nombre}" /><br />
+                <h:outputText id="tipoArchivo7" value="#{item.fidTipoArchivo.nombre}" /><br />
             </h:column>
             <h:column>
                 <f:facet name="header"><h:outputText value="Inicio" /></f:facet>
-                <h:outputText id="inicio" value="#{item.inicio}" /><br />
+                <h:outputText id="inicio7" value="#{item.inicio}" /><br />
             </h:column>
             <h:column>
                 <f:facet name="header"><h:outputText value="Fin" /></f:facet>
-                <h:outputText id="fin" value="#{item.fin}" /><br /><br />
+                <h:outputText id="fin7" value="#{item.fin}" /><br /><br />
             </h:column>
             <h:column>
                 <f:facet name="header"><h:outputText value="Publicar" /></f:facet>
-                <h:commandButton styleClass="commandButton_Main" id="btnMostrar" value="Publicar" action="#{Publicacion.nuevo}">
+                <h:commandButton styleClass="commandButton_Main" id="btnMostrar3" value="Publicar" action="#{Publicacion.nuevo}">
                     <f:setPropertyActionListener target="#{Publicacion.peticionSeleccionada}" value="#{item}" />
                 </h:commandButton>
             </h:column>
 
             <f:facet name="footer">
-                <h:commandButton styleClass="commandButton" id="btnVolver" value="Volver" action="volver"/>
+                <%--<h:commandButton styleClass="commandButton" id="btnVolver3" value="Volver" action="volver"/>
+                --%>
+                <h:commandButton styleClass="commandButton_Main" id="btnNuevoPropio2" value="Publicar Trabajo Propio" action="#{Publicacion.nuevoPropio}"/>
+                
             </f:facet>
 
         </t:dataTable>
