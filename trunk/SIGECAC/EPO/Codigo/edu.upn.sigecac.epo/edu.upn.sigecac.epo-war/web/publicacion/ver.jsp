@@ -35,7 +35,7 @@
 
             <h:outputLabel styleClass="outputLabel" for="txtComentario" value="Comentario" />
             <h:inputText styleClass="inputTextarea jqNombre" id="txtNombre" required="true" value="#{Comentario.comentario.comentario}" />
-            <h:outputText styleClass="outputText" value="aaa" />
+            <h:outputText styleClass="outputText" value="Ingrese su comentario" />
 
 
             <h:panelGroup>

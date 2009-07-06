@@ -31,7 +31,7 @@
 
             <h:outputLabel styleClass="outputLabel" for="txtNombre" value="Nombre" />
             <h:inputText styleClass="inputText jqNombre" id="txtNombre" required="true" value="#{PeriodoAcademico.periodoAcademico.nombre}" />
-            <h:outputText styleClass="outputText" value="aaa" />
+            <h:outputText styleClass="outputText" value="Ingresar el Nombre del Periódo Académico a Registrar" />
 
             <h:outputLabel styleClass="outputLabel" value="Fecha de Inicio"/>
             <h:panelGroup>
@@ -39,7 +39,7 @@
                     <t:inputCalendar renderAsPopup="true" id="txtFechaI" required="true" value="#{PeriodoAcademico.periodoAcademico.inicio}" />
                 </div>
             </h:panelGroup>
-            <h:outputText styleClass="outputText" value="bbb" />
+            <h:outputText styleClass="outputText" value="Ingrese la Fecha de Inicio del Periódo Académico" />
 
             <h:outputLabel styleClass="outputLabel" value="Fecha de Fin"/>
             <h:panelGroup>
@@ -47,7 +47,7 @@
                     <t:inputCalendar renderAsPopup="true" id="txtFechaF" required="true" value="#{PeriodoAcademico.periodoAcademico.fin}" />
                 </div>
             </h:panelGroup>
-            <h:outputText styleClass="outputText" value="ccc" />
+            <h:outputText styleClass="outputText" value="Ingrese la Fecha de Fin del Periódo Académico" />
 
 
             <h:panelGroup />

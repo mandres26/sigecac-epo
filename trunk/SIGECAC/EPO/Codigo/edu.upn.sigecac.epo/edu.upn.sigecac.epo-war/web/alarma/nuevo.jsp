@@ -33,7 +33,7 @@
 
             <h:outputLabel styleClass="outputLabel" for="txtPalabra" value="Palabra" />
             <h:inputText styleClass="inputText jqNombre" id="txtNombre" required="true" value="#{Alarma.alarma.palabra}" />
-            <h:outputText styleClass="outputText" value="aaa" />
+            <h:outputText styleClass="outputText" value="Ingrese la Alarma a Registar" />
 
 
             <h:panelGroup>
