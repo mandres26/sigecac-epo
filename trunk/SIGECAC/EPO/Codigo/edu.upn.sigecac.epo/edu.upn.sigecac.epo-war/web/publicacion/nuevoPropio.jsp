@@ -20,8 +20,6 @@
 
     <h:form enctype="multipart/form-data">
 
-        <span class="titulo"><h:outputText id="txtPeticion" value="Publicar Trabajo: \"#{Publicacion.peticionSeleccionada.nombre}\"" /></span>
-        <BR>
         <BR>
         <BR>
 
@@ -43,10 +41,6 @@
             <h:inputTextarea styleClass="inputTextarea" value="#{Publicacion.publicacion.resumen}" id="txtAbstract" required="false" />
             <h:outputText styleClass="outputText" value="Ingrese un abtract de no mas de 5000 caracteres." />
 
-            <h:outputLabel styleClass="outputLabel" for="txtComentarios" value="Comentarios al docente (no se publican):"/>
-            <h:inputTextarea styleClass="inputTextarea" value="#{Publicacion.publicacion.comentarioAlDocente}" id="txtComentarios" required="false" />
-            <h:outputText styleClass="outputText" value="Si lo desea, puede enviar comentarios al docente con la finalidad de aclararle algun punto sobre su publicación. Estos comentarios no son publicos, solo los leerá el docente." />
-
             <h:outputLabel styleClass="outputLabel" for="bitComentarios" value="¿Deseas que tu publicacion pueda recibir comentarios?" />
             <h:panelGroup>
                 <h:selectBooleanCheckbox id="bitComentarios" value="#{Publicacion.publicacion.recibirComentaios}" />
@@ -57,7 +51,7 @@
 
             <h:panelGroup />
             <h:panelGroup>
-                <h:commandButton styleClass="commandButton_Main" value="PUBLICAR" action="#{Publicacion.guardar}" />
+                <h:commandButton styleClass="commandButton_Main" value="PUBLICAR" action="#{Publicacion.guardarTrabajoPropio}" />
                 <h:commandButton styleClass="commandButton" value="Volver" action="volver" />
             </h:panelGroup>
             <h:panelGroup />

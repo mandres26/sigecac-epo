@@ -42,8 +42,8 @@
                     <h:outputLabel styleClass="outputLabel" for="inicio" value="Inicio: " />
                     <h:outputText id="inicio" value="#{item.keywords}" /><br />
 
-                    <h:commandButton styleClass="commandButton_Main" id="btnMostrar" value="Ver Publicacion" action="#{Comentario.verPublicacion}">
-                        <f:setPropertyActionListener target="#{Publicacion.publicacion}" value="#{item}" />
+                    <h:commandButton styleClass="commandButton_Main" id="btnMostrar" value="Ver Publicacion" action="#{Publicacion.verPublicacion}">
+                        <f:setPropertyActionListener target="#{Publicacion.publicacionSeleccionada}" value="#{item}" />
                     </h:commandButton>
                 </div>
             </h:column>

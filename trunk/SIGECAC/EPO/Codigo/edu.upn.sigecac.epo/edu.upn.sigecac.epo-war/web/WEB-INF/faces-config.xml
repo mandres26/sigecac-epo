@@ -136,6 +136,10 @@
             <from-outcome>volver</from-outcome>
             <to-view-id>/index.jsp</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>publicacion_nuevoPropio</from-outcome>
+            <to-view-id>/publicacion/nuevoPropio.jsp</to-view-id>
+        </navigation-case>
     </navigation-rule>
     <navigation-rule>
         <from-view-id>/publicacion/nuevo.jsp</from-view-id>
@@ -439,6 +443,39 @@
         <navigation-case>
             <from-outcome>ok</from-outcome>
             <to-view-id>/rubrica2/nuevo.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/publicacion/nuevoPropio.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>volver</from-outcome>
+            <to-view-id>/peticion/seleccionarPublicar.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/peticion/seleccionarPublicar.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/comentario/validar.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>ok</from-outcome>
+            <to-view-id>/comentario/validar.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>error</from-outcome>
+            <to-view-id>/comentario/validar.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/comentario/listarPublicaciones.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>volver</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>comentario_validar</from-outcome>
+            <to-view-id>/comentario/validar.jsp</to-view-id>
         </navigation-case>
     </navigation-rule>
 </faces-config>

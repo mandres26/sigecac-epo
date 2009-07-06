@@ -5,6 +5,7 @@
 
 package edu.upn.sigecac.epo.bc;
 
+import edu.upn.sigecac.epo.be.Publicacion;
 import javax.ejb.Local;
 
 /**
@@ -23,5 +24,9 @@ public interface ComentarioLocal {
     public edu.upn.sigecac.epo.be.Comentario buscarPorId(java.lang.Long id) throws java.lang.Exception;
 
     public java.util.List<edu.upn.sigecac.epo.be.Comentario> listar() throws java.lang.Exception;
+
+    public java.util.List<edu.upn.sigecac.epo.be.Comentario> listarNoValidados(Publicacion pub) throws java.lang.Exception;
+
+    public java.util.List<edu.upn.sigecac.epo.be.Comentario> listarValidados(Publicacion pub) throws java.lang.Exception;
     
 }

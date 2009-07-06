@@ -7,13 +7,13 @@ package edu.upn.sigecac.epo.beans;
 
 import edu.upn.sigecac.epo.bc.ComentarioLocal;
 import edu.upn.sigecac.epo.be.Comentario;
-import java.util.Date;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+
+
 
 /**
  *
@@ -21,64 +21,48 @@ import javax.naming.NamingException;
  */
 public class ComentarioController {
 
-    private ComentarioLocal local;
-    private List<Comentario> lista;
-    private Comentario comentario;
+    private ComentarioLocal localComentario;
+    private Comentario comentarioSeleccionado;
 
-    public Comentario getComentario() {
-        return comentario;
+    public Comentario getComentarioSeleccionado() {
+        return comentarioSeleccionado;
     }
 
-    public void setComentario(Comentario comentario) {
-        this.comentario = comentario;
+    public void setComentarioSeleccionado(Comentario comentarioSeleccionado) {
+        this.comentarioSeleccionado = comentarioSeleccionado;
     }
 
-    public ComentarioController () {
-    this.local = lookup();
-
+    public ComentarioController() {
+        this.localComentario = lookupComentario();
     }
 
-    public String verPublicacion(){
-        nuevo();
-        return "publicacion_ver";
-    }
-
-
-    public void nuevo(){
-        comentario = new Comentario();
-        //return "comentario_nuevo";
-    }
-
-    public String Registrar (){
+    public String validarComentario(){
+        String r = "error";
         try {
-            comentario.setFecha(new Date());
-            local.registrar(comentario);
-            nuevo();
-
+            comentarioSeleccionado.setValidado(true);
+            localComentario.editar(comentarioSeleccionado);
+            r= "ok";
         } catch (Exception ex) {
             Logger.getLogger(ComentarioController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return "ok";
+        return r;
     }
 
-        public List<Comentario> listar() {
+    public String descartarComentario(){
+        String r = "error";
         try {
-            return local.listar();
-        } catch (Exception e) {
-            local = lookup();
-            e.printStackTrace();
+            //comentarioSeleccionado.setValidado(true);
+            localComentario.eliminar(comentarioSeleccionado);
+            r= "ok";
+        } catch (Exception ex) {
+            Logger.getLogger(ComentarioController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return null;
-    }
-
-    public List<Comentario> getListaComentarios() {
-        lista = listar();
-        return lista;
+        return r;
     }
 
 
 
-    private ComentarioLocal lookup() {
+    private ComentarioLocal lookupComentario() {
         try {
             Context c = new InitialContext();
             return (ComentarioLocal) c.lookup("java:comp/env/ComentarioBean");
@@ -87,8 +71,6 @@ public class ComentarioController {
             throw new RuntimeException(ne);
         }
     }
-
-
 
 
 }

@@ -18,33 +18,58 @@
     <%@include file="../WEB-INF/jspf/cuadro_medio.jspf" %>
     <%@include file="../WEB-INF/jspf/bloque_inicio.jspf" %>
 
-    <span class="titulo">Listar: Comentario</span>
+    <span class="titulo">Ver detalle de Trabajo</span>
     <BR>
     <BR>
     <BR>
 
-       <h:form>
-           <t:dataTable value="#{Comentario.listaComentarios}" var="item" preserveDataModel="true" varDetailToggler="detailToggler" styleClass="formulario">
+    <h:form>
+
+        <h:panelGrid columns="2" styleClass="formulario" cellpadding="10" cellspacing="0" border="0">
+            <h:outputLabel styleClass="outputLabel" for="txtTitulo" value="Título del Trabajo" />
+            <h:inputText styleClass="inputText" value="#{Publicacion.publicacionSeleccionada.titulo}" id="txtTitulo" readonly="true" />
+
+            <h:outputLabel styleClass="outputLabel" for="txtKeywords" value="Palabras clave (separadas por coma)" />
+            <h:inputText styleClass="inputText" value="#{Publicacion.publicacionSeleccionada.keywords}" id="txtKeywords" readonly="true" />
+
+            <h:outputLabel styleClass="outputLabel" for="txtAbstract" value="Abstract (5000 caracteres max.)"/>
+            <h:inputTextarea styleClass="inputTextarea" value="#{Publicacion.publicacionSeleccionada.resumen}" id="txtAbstract" readonly="true" />
+
+            <h:outputLabel styleClass="outputLabel" for="bitComentarios" value="¿Deseas que tu publicacion pueda recibir comentarios?" />
+            <h:panelGroup>
+                <h:selectBooleanCheckbox id="bitComentarios" readonly="true" value="#{Publicacion.publicacionSeleccionada.recibirComentaios}" />
+                <h:outputLabel for="bitComentarios" value="Si deseo recibir comentarios" />
+            </h:panelGroup>
+
+        </h:panelGrid>
+
+
+        <t:dataTable value="#{Publicacion.listaComentariosValidados}" var="item" preserveDataModel="true" varDetailToggler="detailToggler" styleClass="formulario">
             <h:column>
                 <f:facet name="header"><h:outputText value="Comentarios" /></f:facet>
                 <h:outputText id="comentario" value="#{item.comentario}" />
             </h:column>
+            <h:column>
+                <f:facet name="header"><h:outputText value="Fecha" /></f:facet>
+                <h:outputText id="fecha" value="#{item.fecha}" />
+            </h:column>
             <f:facet name="footer">
 
-        <h:panelGrid columns="3" styleClass="formulario" cellpadding="10" cellspacing="0" border="0">
+                <h:panelGrid columns="3" styleClass="formulario" cellpadding="10" cellspacing="0" border="0">
 
-            <h:outputLabel styleClass="outputLabel" for="txtComentario" value="Comentario" />
-            <h:inputText styleClass="inputTextarea jqNombre" id="txtNombre" required="true" value="#{Comentario.comentario.comentario}" />
-            <h:outputText styleClass="outputText" value="Ingrese su comentario" />
+                    <h:outputLabel styleClass="outputLabel" for="txtComentario" value="Comentario" />
+                    <h:inputText styleClass="inputTextarea jqNombre" id="txtNombre" required="true" value="#{Publicacion.comentario.comentario}" />
+                    <h:outputText styleClass="outputText" value="Ingrese su comentario" />
 
+                    
+                    <h:panelGroup />
+                    <h:panelGroup>
+                        <h:commandButton styleClass="commandButton_Main" value="Enviar" action="#{Publicacion.RegistrarComentario}" />
+                        <h:commandButton styleClass="commandButton_Main" value="Volver" action="volver" />
+                    </h:panelGroup>
+                    <h:panelGroup />
 
-            <h:panelGroup>
-                <h:commandButton styleClass="commandButton_Main" value="Enviar" action="#{Comentario.Registrar}" />
-                <h:commandButton styleClass="commandButton_Main" value="Volver" action="volver" />
-            </h:panelGroup>
-            <h:panelGroup />
-
-        </h:panelGrid>
+                </h:panelGrid>
             </f:facet>
         </t:dataTable>
     </h:form>
